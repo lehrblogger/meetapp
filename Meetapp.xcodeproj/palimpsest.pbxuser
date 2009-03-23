@@ -1,0 +1,177 @@
+// !$*UTF8*$!
+{
+	1D3623250D0F684500981E51 /* MeetappAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {620, 686}}";
+			sepNavSelRange = "{87, 0}";
+			sepNavVisRange = "{0, 240}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Meetapp */ = {
+		activeExec = 0;
+		executables = (
+			2D2AD2380F78206C00F04140 /* Meetapp */,
+		);
+	};
+	28216C950DB411BC00E5133A /* FirstViewController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = FirstViewController.h;
+		path = /Users/palimpsest/Documents/School/NYU/Projects/Meetapp/Classes/FirstViewController.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {620, 238}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 233}";
+		};
+	};
+	28216C960DB411BC00E5133A /* FirstViewController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = FirstViewController.m;
+		path = /Users/palimpsest/Documents/School/NYU/Projects/Meetapp/Classes/FirstViewController.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {620, 840}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 224}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 2D2AD2380F78206C00F04140 /* Meetapp */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Meetapp */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Meetapp */,
+		);
+		codeSenseManager = 2D2AD2400F78206D00F04140 /* Code sense */;
+		executables = (
+			2D2AD2380F78206C00F04140 /* Meetapp */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					442,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 259530860;
+			PBXWorkspaceStateSaveDate = 259530860;
+		};
+		perUserProjectItems = {
+			2D2AD2490F78210400F04140 /* PBXTextBookmark */ = 2D2AD2490F78210400F04140 /* PBXTextBookmark */;
+			2D2AD24A0F78210400F04140 /* PBXTextBookmark */ = 2D2AD24A0F78210400F04140 /* PBXTextBookmark */;
+			2D2AD24B0F78210400F04140 /* PBXTextBookmark */ = 2D2AD24B0F78210400F04140 /* PBXTextBookmark */;
+			2D2AD24C0F78210400F04140 /* PBXTextBookmark */ = 2D2AD24C0F78210400F04140 /* PBXTextBookmark */;
+			2D2AD24D0F78210400F04140 /* PBXTextBookmark */ = 2D2AD24D0F78210400F04140 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 2D2AD23F0F78206D00F04140 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	2D2AD2380F78206C00F04140 /* Meetapp */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Meetapp;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	2D2AD23F0F78206D00F04140 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	2D2AD2400F78206D00F04140 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	2D2AD2490F78210400F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
+		name = "FirstViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 224;
+		vrLoc = 0;
+	};
+	2D2AD24A0F78210400F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28216C950DB411BC00E5133A /* FirstViewController.h */;
+		name = "FirstViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 233;
+		vrLoc = 0;
+	};
+	2D2AD24B0F78210400F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28216C950DB411BC00E5133A /* FirstViewController.h */;
+		name = "FirstViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 233;
+		vrLoc = 0;
+	};
+	2D2AD24C0F78210400F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
+		name = "FirstViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 224;
+		vrLoc = 0;
+	};
+	2D2AD24D0F78210400F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28216C950DB411BC00E5133A /* FirstViewController.h */;
+		name = "FirstViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 233;
+		vrLoc = 0;
+	};
+}
