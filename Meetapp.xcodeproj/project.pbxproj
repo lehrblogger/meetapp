@@ -17,6 +17,9 @@
 		2D2AD2570F78217E00F04140 /* AttendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AD2560F78217E00F04140 /* AttendView.xib */; };
 		2D2AD2590F78218600F04140 /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AD2580F78218600F04140 /* ExploreView.xib */; };
 		2D2AD25B0F78218D00F04140 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AD25A0F78218D00F04140 /* SettingsView.xib */; };
+		2D2AD2730F782D1F00F04140 /* OrganizeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */; };
+		2D2AD2780F782DFC00F04140 /* OrganizeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */; };
+		2D2AD3070F78713900F04140 /* OrganizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3060F78713900F04140 /* OrganizerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,12 @@
 		2D2AD2560F78217E00F04140 /* AttendView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendView.xib; sourceTree = "<group>"; };
 		2D2AD2580F78218600F04140 /* ExploreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreView.xib; sourceTree = "<group>"; };
 		2D2AD25A0F78218D00F04140 /* SettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeTableViewController.h; sourceTree = "<group>"; };
+		2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeTableViewController.m; sourceTree = "<group>"; };
+		2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeTableViewCell.h; sourceTree = "<group>"; };
+		2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeTableViewCell.m; sourceTree = "<group>"; };
+		2D2AD3050F78713900F04140 /* OrganizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizerViewController.h; sourceTree = "<group>"; };
+		2D2AD3060F78713900F04140 /* OrganizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizerViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +62,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2D2AD3050F78713900F04140 /* OrganizerViewController.h */,
+				2D2AD3060F78713900F04140 /* OrganizerViewController.m */,
+				2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */,
+				2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */,
+				2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */,
+				2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */,
 				1D3623240D0F684500981E51 /* MeetappAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MeetappAppDelegate.m */,
 			);
@@ -170,6 +185,9 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MeetappAppDelegate.m in Sources */,
+				2D2AD2730F782D1F00F04140 /* OrganizeTableViewController.m in Sources */,
+				2D2AD2780F782DFC00F04140 /* OrganizeTableViewCell.m in Sources */,
+				2D2AD3070F78713900F04140 /* OrganizerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

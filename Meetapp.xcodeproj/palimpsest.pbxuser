@@ -1,10 +1,17 @@
 // !$*UTF8*$!
 {
+	1D3623240D0F684500981E51 /* MeetappAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {782, 919}}";
+			sepNavSelRange = "{270, 0}";
+			sepNavVisRange = "{0, 478}";
+		};
+	};
 	1D3623250D0F684500981E51 /* MeetappAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {620, 686}}";
+			sepNavIntBoundsRect = "{{0, 0}, {894, 896}}";
 			sepNavSelRange = "{87, 0}";
-			sepNavVisRange = "{0, 240}";
+			sepNavVisRange = "{0, 959}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* Meetapp */ = {
@@ -46,6 +53,9 @@
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Meetapp */,
 		);
+		breakpoints = (
+			2D2AD28F0F783C6200F04140 /* OrganizeTableViewController.m:29 */,
+		);
 		codeSenseManager = 2D2AD2400F78206D00F04140 /* Code sense */;
 		executables = (
 			2D2AD2380F78206C00F04140 /* Meetapp */,
@@ -56,7 +66,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					442,
+					666,
 					20,
 					48.16259765625,
 					43,
@@ -82,6 +92,64 @@
 			2D2AD24B0F78210400F04140 /* PBXTextBookmark */ = 2D2AD24B0F78210400F04140 /* PBXTextBookmark */;
 			2D2AD24C0F78210400F04140 /* PBXTextBookmark */ = 2D2AD24C0F78210400F04140 /* PBXTextBookmark */;
 			2D2AD24D0F78210400F04140 /* PBXTextBookmark */ = 2D2AD24D0F78210400F04140 /* PBXTextBookmark */;
+			2D2AD2930F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2930F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2940F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2940F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2950F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2950F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2960F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2960F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2970F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2970F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2980F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2980F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2990F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2990F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD29A0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD29A0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD29B0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD29B0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD29C0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD29C0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD29D0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD29D0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD29E0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD29E0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD29F0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD29F0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A00F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A00F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A10F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A10F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A20F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A20F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A30F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A30F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A40F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A40F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A50F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A50F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A60F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A60F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A70F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A70F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A80F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A80F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2A90F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2A90F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2AA0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2AA0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2AB0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2AB0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2AC0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2AC0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2AD0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2AD0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2AE0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2AE0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2AF0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2AF0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B00F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B00F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B10F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B10F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B20F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B20F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B30F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B30F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B40F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B40F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B50F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B50F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B60F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B60F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B70F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B70F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B80F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B80F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2B90F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2B90F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2BA0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2BA0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2BB0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2BB0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2BC0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2BC0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2BD0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2BD0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2BE0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2BE0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2BF0F783C6D00F04140 /* PBXTextBookmark */ = 2D2AD2BF0F783C6D00F04140 /* PBXTextBookmark */;
+			2D2AD2E30F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2E30F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2E40F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2E40F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2E50F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2E50F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2E60F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2E60F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2E70F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2E70F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2E80F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2E80F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2E90F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2E90F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2EA0F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2EA0F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2EB0F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2EB0F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2EC0F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2EC0F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2ED0F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2ED0F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2EE0F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2EE0F78439E00F04140 /* PBXTextBookmark */;
+			2D2AD2EF0F78439E00F04140 /* PBXTextBookmark */ = 2D2AD2EF0F78439E00F04140 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2D2AD23F0F78206D00F04140 /* Source Control */;
 		userBuildSettings = {
@@ -112,6 +180,8 @@
 		};
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	2D2AD23F0F78206D00F04140 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -173,5 +243,630 @@
 		rType = 0;
 		vrLen = 233;
 		vrLoc = 0;
+	};
+	2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {782, 919}}";
+			sepNavSelRange = "{295, 0}";
+			sepNavVisRange = "{0, 305}";
+		};
+	};
+	2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {984, 2282}}";
+			sepNavSelRange = "{1843, 0}";
+			sepNavVisRange = "{0, 1651}";
+		};
+	};
+	2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {782, 919}}";
+			sepNavSelRange = "{293, 0}";
+			sepNavVisRange = "{0, 298}";
+		};
+	};
+	2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {782, 896}}";
+			sepNavSelRange = "{859, 0}";
+			sepNavVisRange = "{0, 865}";
+		};
+	};
+	2D2AD28F0F783C6200F04140 /* OrganizeTableViewController.m:29 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		functionName = "-viewDidLoad";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 29;
+		location = Meetapp;
+		modificationTime = 259542902.037214;
+		state = 1;
+	};
+	2D2AD2930F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD2940F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MeetappAppDelegate.m */;
+		name = "MeetappAppDelegate.m: 5";
+		rLen = 0;
+		rLoc = 87;
+		rType = 0;
+		vrLen = 959;
+		vrLoc = 0;
+	};
+	2D2AD2950F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 43";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	2D2AD2960F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2970F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2980F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 30";
+		rLen = 31;
+		rLoc = 803;
+		rType = 0;
+		vrLen = 2370;
+		vrLoc = 1654;
+	};
+	2D2AD2990F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MeetappAppDelegate.m */;
+		name = "MeetappAppDelegate.m: 5";
+		rLen = 0;
+		rLoc = 87;
+		rType = 0;
+		vrLen = 240;
+		vrLoc = 0;
+	};
+	2D2AD29A0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD29B0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 119";
+		rLen = 0;
+		rLoc = 3405;
+		rType = 0;
+		vrLen = 2014;
+		vrLoc = 2477;
+	};
+	2D2AD29C0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 16";
+		rLen = 0;
+		rLoc = 291;
+		rType = 0;
+		vrLen = 297;
+		vrLoc = 0;
+	};
+	2D2AD29D0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 6";
+		rLen = 0;
+		rLoc = 112;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 0;
+	};
+	2D2AD29E0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD29F0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MeetappAppDelegate.m */;
+		name = "MeetappAppDelegate.m: 5";
+		rLen = 0;
+		rLoc = 87;
+		rType = 0;
+		vrLen = 959;
+		vrLoc = 0;
+	};
+	2D2AD2A00F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2A10F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 81";
+		rLen = 0;
+		rLoc = 2142;
+		rType = 0;
+		vrLen = 2009;
+		vrLoc = 1187;
+	};
+	2D2AD2A20F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2A30F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 22";
+		rLen = 0;
+		rLoc = 517;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 0;
+	};
+	2D2AD2A40F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MeetappAppDelegate.m */;
+		name = "MeetappAppDelegate.m: 5";
+		rLen = 0;
+		rLoc = 87;
+		rType = 0;
+		vrLen = 959;
+		vrLoc = 0;
+	};
+	2D2AD2A50F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2A60F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 90";
+		rLen = 0;
+		rLoc = 2429;
+		rType = 0;
+		vrLen = 2279;
+		vrLoc = 1948;
+	};
+	2D2AD2A70F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 43";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	2D2AD2A80F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2A90F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 30";
+		rLen = 31;
+		rLoc = 803;
+		rType = 0;
+		vrLen = 2095;
+		vrLoc = 1019;
+	};
+	2D2AD2AA0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2AB0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 43";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	2D2AD2AC0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD2AD0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 30";
+		rLen = 31;
+		rLoc = 803;
+		rType = 0;
+		vrLen = 2021;
+		vrLoc = 1019;
+	};
+	2D2AD2AE0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD2AF0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MeetappAppDelegate.m */;
+		name = "MeetappAppDelegate.m: 5";
+		rLen = 0;
+		rLoc = 87;
+		rType = 0;
+		vrLen = 959;
+		vrLoc = 0;
+	};
+	2D2AD2B00F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2B10F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 30";
+		rLen = 31;
+		rLoc = 803;
+		rType = 0;
+		vrLen = 2375;
+		vrLoc = 1654;
+	};
+	2D2AD2B20F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 43";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	2D2AD2B30F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2B40F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 43";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	2D2AD2B50F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD2B60F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2B70F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 30";
+		rLen = 31;
+		rLoc = 803;
+		rType = 0;
+		vrLen = 2375;
+		vrLoc = 1654;
+	};
+	2D2AD2B80F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD2B90F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MeetappAppDelegate.m */;
+		name = "MeetappAppDelegate.m: 5";
+		rLen = 0;
+		rLoc = 87;
+		rType = 0;
+		vrLen = 959;
+		vrLoc = 0;
+	};
+	2D2AD2BA0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 43";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	2D2AD2BB0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2BC0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */;
+		name = "OrganizeTableViewCell.m: 43";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	2D2AD2BD0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2BE0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2BF0F783C6D00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 27";
+		rLen = 0;
+		rLoc = 604;
+		rType = 0;
+		vrLen = 1651;
+		vrLoc = 0;
+	};
+	2D2AD2E30F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2E40F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD2E50F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2E60F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 8";
+		rLen = 40;
+		rLoc = 159;
+		rType = 0;
+		vrLen = 1687;
+		vrLoc = 3;
+	};
+	2D2AD2E70F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 27";
+		rLen = 0;
+		rLoc = 604;
+		rType = 0;
+		vrLen = 1775;
+		vrLoc = 3;
+	};
+	2D2AD2E80F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD2E90F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2EA0F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 27";
+		rLen = 0;
+		rLoc = 604;
+		rType = 0;
+		vrLen = 1686;
+		vrLoc = 3;
+	};
+	2D2AD2EB0F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */;
+		name = "OrganizeTableViewCell.h: 18";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	2D2AD2EC0F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 11";
+		rLen = 0;
+		rLoc = 233;
+		rType = 0;
+		vrLen = 1687;
+		vrLoc = 3;
+	};
+	2D2AD2ED0F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* MeetappAppDelegate.h */;
+		name = "MeetappAppDelegate.h: 11";
+		rLen = 0;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	2D2AD2EE0F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */;
+		name = "OrganizeTableViewController.h: 13";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	2D2AD2EF0F78439E00F04140 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */;
+		name = "OrganizeTableViewController.m: 11";
+		rLen = 0;
+		rLoc = 234;
+		rType = 0;
+		vrLen = 1686;
+		vrLoc = 3;
 	};
 }
