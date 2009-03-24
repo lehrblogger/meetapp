@@ -1,5 +1,5 @@
 //
-//  OrganizeTableViewController.h
+//  SettingsViewController.h
 //  Meetapp
 //
 //  Created by Steven Lehrburger on 3/23/09.
@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-@interface OrganizeTableViewController : UITableViewController {
-	NSMutableArray              *organizeEventsArray;
+@interface SettingsViewController : UIViewController {
+
 }
 
 -(id)initWithTabBar;

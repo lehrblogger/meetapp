@@ -11,15 +11,13 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
-		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
-		2D2AD2460F7820D800F04140 /* OrganizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AD2450F7820D800F04140 /* OrganizeView.xib */; };
-		2D2AD2570F78217E00F04140 /* AttendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AD2560F78217E00F04140 /* AttendView.xib */; };
-		2D2AD2590F78218600F04140 /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AD2580F78218600F04140 /* ExploreView.xib */; };
-		2D2AD25B0F78218D00F04140 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AD25A0F78218D00F04140 /* SettingsView.xib */; };
-		2D2AD2730F782D1F00F04140 /* OrganizeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */; };
-		2D2AD2780F782DFC00F04140 /* OrganizeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */; };
-		2D2AD3070F78713900F04140 /* OrganizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3060F78713900F04140 /* OrganizerViewController.m */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		2D2AD3400F7877EE00F04140 /* OrganizeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD33F0F7877EE00F04140 /* OrganizeTableViewController.m */; };
+		2D2AD3430F7877F700F04140 /* AttendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */; };
+		2D2AD3950F787C9B00F04140 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */; };
+		2D2AD3B50F787EBB00F04140 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */; };
+		2D2AD3BA0F787F3B00F04140 /* ExploreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,20 +26,20 @@
 		1D3623250D0F684500981E51 /* MeetappAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetappAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Meetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28A0AB4B0D9B1048005BE974 /* Meetapp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meetapp_Prefix.pch; sourceTree = "<group>"; };
-		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2D2AD2450F7820D800F04140 /* OrganizeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrganizeView.xib; sourceTree = "<group>"; };
-		2D2AD2560F78217E00F04140 /* AttendView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendView.xib; sourceTree = "<group>"; };
-		2D2AD2580F78218600F04140 /* ExploreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreView.xib; sourceTree = "<group>"; };
-		2D2AD25A0F78218D00F04140 /* SettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
-		2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeTableViewController.h; sourceTree = "<group>"; };
-		2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeTableViewController.m; sourceTree = "<group>"; };
-		2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeTableViewCell.h; sourceTree = "<group>"; };
-		2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeTableViewCell.m; sourceTree = "<group>"; };
-		2D2AD3050F78713900F04140 /* OrganizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizerViewController.h; sourceTree = "<group>"; };
-		2D2AD3060F78713900F04140 /* OrganizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizerViewController.m; sourceTree = "<group>"; };
+		2D2AD33E0F7877EE00F04140 /* OrganizeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeTableViewController.h; sourceTree = "<group>"; };
+		2D2AD33F0F7877EE00F04140 /* OrganizeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeTableViewController.m; sourceTree = "<group>"; };
+		2D2AD3410F7877F700F04140 /* AttendTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendTableViewController.h; sourceTree = "<group>"; };
+		2D2AD3420F7877F700F04140 /* AttendTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendTableViewController.m; sourceTree = "<group>"; };
+		2D2AD3930F787C9B00F04140 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		2D2AD3B30F787EBB00F04140 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2D2AD3B80F787F3B00F04140 /* ExploreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTableViewController.h; sourceTree = "<group>"; };
+		2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTableViewController.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Meetapp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meetapp_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +50,7 @@
 			files = (
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +60,16 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2D2AD3050F78713900F04140 /* OrganizerViewController.h */,
-				2D2AD3060F78713900F04140 /* OrganizerViewController.m */,
-				2D2AD2760F782DFC00F04140 /* OrganizeTableViewCell.h */,
-				2D2AD2770F782DFC00F04140 /* OrganizeTableViewCell.m */,
-				2D2AD2710F782D1F00F04140 /* OrganizeTableViewController.h */,
-				2D2AD2720F782D1F00F04140 /* OrganizeTableViewController.m */,
+				2D2AD33E0F7877EE00F04140 /* OrganizeTableViewController.h */,
+				2D2AD33F0F7877EE00F04140 /* OrganizeTableViewController.m */,
+				2D2AD3410F7877F700F04140 /* AttendTableViewController.h */,
+				2D2AD3420F7877F700F04140 /* AttendTableViewController.m */,
+				2D2AD3B80F787F3B00F04140 /* ExploreTableViewController.h */,
+				2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */,
+				2D2AD3B30F787EBB00F04140 /* SettingsViewController.h */,
+				2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */,
+				2D2AD3930F787C9B00F04140 /* EventTableViewCell.h */,
+				2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */,
 				1D3623240D0F684500981E51 /* MeetappAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MeetappAppDelegate.m */,
 			);
@@ -82,7 +84,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* Meetapp */ = {
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -91,13 +93,13 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = Meetapp;
+			name = CustomTemplate;
 			sourceTree = "<group>";
 		};
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28A0AB4B0D9B1048005BE974 /* Meetapp_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* Meetapp_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -106,11 +108,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2D2AD2450F7820D800F04140 /* OrganizeView.xib */,
-				2D2AD2560F78217E00F04140 /* AttendView.xib */,
-				2D2AD2580F78218600F04140 /* ExploreView.xib */,
-				2D2AD25A0F78218D00F04140 /* SettingsView.xib */,
-				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
 			name = Resources;
@@ -121,7 +119,7 @@
 			children = (
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
-				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,7 +152,7 @@
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Meetapp" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
-			mainGroup = 29B97314FDCFA39411CA2CEA /* Meetapp */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -168,11 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
-				2D2AD2460F7820D800F04140 /* OrganizeView.xib in Resources */,
-				2D2AD2570F78217E00F04140 /* AttendView.xib in Resources */,
-				2D2AD2590F78218600F04140 /* ExploreView.xib in Resources */,
-				2D2AD25B0F78218D00F04140 /* SettingsView.xib in Resources */,
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +179,11 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MeetappAppDelegate.m in Sources */,
-				2D2AD2730F782D1F00F04140 /* OrganizeTableViewController.m in Sources */,
-				2D2AD2780F782DFC00F04140 /* OrganizeTableViewCell.m in Sources */,
-				2D2AD3070F78713900F04140 /* OrganizerViewController.m in Sources */,
+				2D2AD3400F7877EE00F04140 /* OrganizeTableViewController.m in Sources */,
+				2D2AD3430F7877F700F04140 /* AttendTableViewController.m in Sources */,
+				2D2AD3950F787C9B00F04140 /* EventTableViewCell.m in Sources */,
+				2D2AD3B50F787EBB00F04140 /* SettingsViewController.m in Sources */,
+				2D2AD3BA0F787F3B00F04140 /* ExploreTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,27 +1,26 @@
 //
-//  OrganizeTableViewController.m
+//  AttendTableViewController.m
 //  Meetapp
 //
 //  Created by Steven Lehrburger on 3/23/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "OrganizeTableViewController.h"
-#import "EventTableViewCell.h"
+#import "AttendTableViewController.h"
 
 
-@implementation OrganizeTableViewController
+@implementation AttendTableViewController
 
 -(id) initWithTabBar {
 	if ([self init]) {
 		//this is the label on the tab button itself
-		self.title = @"Organize";
+		self.title = @"Attend";
 		
 		//use whatever image you want and add it to your project
 		//self.tabBarItem.image = [UIImage imageNamed:@"name_gray.png"];
 		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title=@"Organize";
+		self.navigationItem.title=@"Attend";
 	}
 	return self;
 	
@@ -37,18 +36,14 @@
 }
 */
 
+/*
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-	
-	// must end initWithObject with nil
-	organizeEventsArray = [[NSMutableArray alloc] initWithObjects:@"meetup1", @"meetup2", @"meetup3", @"meetup4", @"meetup5", @"meetup6", @"meetup7", @"meetup8", nil];
- 
-	[self.tableView reloadData];
- }
- 
+}
+*/
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -93,8 +88,7 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [organizeEventsArray count];
-
+    return 0;
 }
 
 
@@ -103,13 +97,12 @@
     
     static NSString *CellIdentifier = @"Cell";
     
-    EventTableViewCell *cell = (EventTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[EventTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Set up the cell...
-	[cell setData:[organizeEventsArray objectAtIndex:[indexPath row]]];
 
     return cell;
 }
