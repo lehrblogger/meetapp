@@ -137,6 +137,11 @@
 			2D0C0E3A0F7C6FAB001E38AA /* PBXTextBookmark */ = 2D0C0E3A0F7C6FAB001E38AA /* PBXTextBookmark */;
 			2D0C0E3B0F7C848A001E38AA /* PBXTextBookmark */ = 2D0C0E3B0F7C848A001E38AA /* PBXTextBookmark */;
 			2D0C0E3C0F7C8504001E38AA /* PBXTextBookmark */ = 2D0C0E3C0F7C8504001E38AA /* PBXTextBookmark */;
+			2D0C0E3E0F7C89C1001E38AA /* PBXTextBookmark */ = 2D0C0E3E0F7C89C1001E38AA /* PBXTextBookmark */;
+			2D0C0E400F7C89D3001E38AA /* PBXTextBookmark */ = 2D0C0E400F7C89D3001E38AA /* PBXTextBookmark */;
+			2D0C0E430F7C8B01001E38AA /* PBXTextBookmark */ = 2D0C0E430F7C8B01001E38AA /* PBXTextBookmark */;
+			2D0C0E440F7C8B20001E38AA /* PBXTextBookmark */ = 2D0C0E440F7C8B20001E38AA /* PBXTextBookmark */;
+			2D0C0E450F7C8B44001E38AA /* PBXTextBookmark */ = 2D0C0E450F7C8B44001E38AA /* PBXTextBookmark */;
 			2D2AD3480F78780C00F04140 = 2D2AD3480F78780C00F04140 /* PBXTextBookmark */;
 			2D2AD3490F78780C00F04140 = 2D2AD3490F78780C00F04140 /* PBXTextBookmark */;
 			2D2AD34A0F78780C00F04140 = 2D2AD34A0F78780C00F04140 /* PBXTextBookmark */;
@@ -303,7 +308,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 13";
 		rLen = 370;
-		rLoc = 269;
+		rLoc = 261;
 		rType = 0;
 		vrLen = 1689;
 		vrLoc = 0;
@@ -383,7 +388,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 13";
 		rLen = 370;
-		rLoc = 269;
+		rLoc = 261;
 		rType = 0;
 		vrLen = 1689;
 		vrLoc = 0;
@@ -413,7 +418,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 11";
 		rLen = 0;
-		rLoc = 226;
+		rLoc = 218;
 		rType = 0;
 		vrLen = 1689;
 		vrLoc = 0;
@@ -423,7 +428,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 10";
 		rLen = 0;
-		rLoc = 225;
+		rLoc = 217;
 		rType = 0;
 		vrLen = 1718;
 		vrLoc = 0;
@@ -433,7 +438,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 46";
 		rLen = 0;
-		rLoc = 5228;
+		rLoc = 960;
 		rType = 0;
 		vrLen = 1826;
 		vrLoc = 270;
@@ -443,7 +448,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 46";
 		rLen = 0;
-		rLoc = 5117;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 1823;
 		vrLoc = 270;
@@ -453,7 +458,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 45";
 		rLen = 0;
-		rLoc = 5115;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 4641;
 		vrLoc = 269;
@@ -463,7 +468,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 42";
 		rLen = 0;
-		rLoc = 2125;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 4527;
 		vrLoc = 157;
@@ -473,7 +478,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 42";
 		rLen = 0;
-		rLoc = 2125;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 4078;
 		vrLoc = 227;
@@ -493,7 +498,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 42";
 		rLen = 0;
-		rLoc = 2125;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 4078;
 		vrLoc = 227;
@@ -573,7 +578,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 42";
 		rLen = 0;
-		rLoc = 2125;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 4072;
 		vrLoc = 227;
@@ -663,7 +668,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 42";
 		rLen = 0;
-		rLoc = 2125;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 4235;
 		vrLoc = 154;
@@ -673,7 +678,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 28";
 		rLen = 0;
-		rLoc = 640;
+		rLoc = 632;
 		rType = 0;
 		vrLen = 4235;
 		vrLoc = 154;
@@ -683,7 +688,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 32";
 		rLen = 0;
-		rLoc = 731;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 4235;
 		vrLoc = 154;
@@ -693,7 +698,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 45";
 		rLen = 0;
-		rLoc = 1432;
+		rLoc = 909;
 		rType = 0;
 		vrLen = 4767;
 		vrLoc = 154;
@@ -718,8 +723,8 @@
 		isa = PBXTextBookmark;
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 54";
-		rLen = 9;
-		rLoc = 1822;
+		rLen = 0;
+		rLoc = 909;
 		rType = 0;
 		vrLen = 4864;
 		vrLoc = 154;
@@ -745,7 +750,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 55";
 		rLen = 0;
-		rLoc = 1910;
+		rLoc = 909;
 		rType = 0;
 		vrLen = 4745;
 		vrLoc = 645;
@@ -754,8 +759,8 @@
 		isa = PBXTextBookmark;
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 38";
-		rLen = 369;
-		rLoc = 1100;
+		rLen = 0;
+		rLoc = 909;
 		rType = 0;
 		vrLen = 4779;
 		vrLoc = 154;
@@ -765,10 +770,60 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 39";
 		rLen = 0;
-		rLoc = 1100;
+		rLoc = 909;
 		rType = 0;
 		vrLen = 4939;
 		vrLoc = 154;
+	};
+	2D0C0E3E0F7C89C1001E38AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
+		name = "AttendTableViewController.m: 45";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 1610;
+		vrLoc = 0;
+	};
+	2D0C0E400F7C89D3001E38AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
+		name = "AttendTableViewController.m: 9";
+		rLen = 0;
+		rLoc = 217;
+		rType = 0;
+		vrLen = 1614;
+		vrLoc = 0;
+	};
+	2D0C0E430F7C8B01001E38AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
+		name = "AttendTableViewController.m: 9";
+		rLen = 0;
+		rLoc = 217;
+		rType = 0;
+		vrLen = 1614;
+		vrLoc = 0;
+	};
+	2D0C0E440F7C8B20001E38AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
+		name = "AttendTableViewController.m: 9";
+		rLen = 0;
+		rLoc = 217;
+		rType = 0;
+		vrLen = 1614;
+		vrLoc = 0;
+	};
+	2D0C0E450F7C8B44001E38AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
+		name = "AttendTableViewController.m: 10";
+		rLen = 0;
+		rLoc = 217;
+		rType = 0;
+		vrLen = 1601;
+		vrLoc = 0;
 	};
 	2D242C920F795BBF00313B15 /* UINavigationController.h */ = {
 		isa = PBXFileReference;
@@ -784,7 +839,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -839,9 +894,9 @@
 	};
 	2D2AD3420F7877F700F04140 /* AttendTableViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {17328, 2518}}";
-			sepNavSelRange = "{1100, 0}";
-			sepNavVisRange = "{154, 4939}";
+			sepNavIntBoundsRect = "{{0, 0}, {918, 2044}}";
+			sepNavSelRange = "{217, 0}";
+			sepNavVisRange = "{0, 1601}";
 		};
 	};
 	2D2AD3480F78780C00F04140 /* PBXTextBookmark */ = {
@@ -899,7 +954,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 25";
 		rLen = 0;
-		rLoc = 635;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 0;
@@ -1002,7 +1057,7 @@
 		fRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */;
 		name = "AttendTableViewController.m: 13";
 		rLen = 370;
-		rLoc = 269;
+		rLoc = 261;
 		rType = 0;
 		vrLen = 1011;
 		vrLoc = 157;
@@ -1410,6 +1465,12 @@
 		vrLoc = 0;
 	};
 	2D9B2D730F7C604F00DAD7DA /* CJSONScanner.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = CJSONScanner.h;
+		path = /Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/JSON/CJSONScanner.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {720, 995}}";
 			sepNavSelRange = "{0, 0}";
@@ -1417,6 +1478,12 @@
 		};
 	};
 	2D9B2D750F7C604F00DAD7DA /* CJSONSerializer.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = CJSONSerializer.h;
+		path = /Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/JSON/CJSONSerializer.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {720, 995}}";
 			sepNavSelRange = "{0, 0}";
@@ -1424,6 +1491,12 @@
 		};
 	};
 	2D9B2D760F7C604F00DAD7DA /* CJSONSerializer.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = CJSONSerializer.m;
+		path = /Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/JSON/CJSONSerializer.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {762, 2562}}";
 			sepNavSelRange = "{0, 0}";
@@ -1431,6 +1504,12 @@
 		};
 	};
 	2D9B2D770F7C604F00DAD7DA /* CJSONDeserializer.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = CJSONDeserializer.h;
+		path = /Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/JSON/CJSONDeserializer.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {720, 995}}";
 			sepNavSelRange = "{0, 0}";
@@ -1438,6 +1517,12 @@
 		};
 	};
 	2D9B2D780F7C604F00DAD7DA /* CJSONDeserializer.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = CJSONDeserializer.m;
+		path = /Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/JSON/CJSONDeserializer.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {720, 1162}}";
 			sepNavSelRange = "{0, 0}";
@@ -1445,6 +1530,12 @@
 		};
 	};
 	2D9B2D7C0F7C608000DAD7DA /* CDataScanner.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = CDataScanner.h;
+		path = /Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/JSON/CDataScanner.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {846, 966}}";
 			sepNavSelRange = "{1274, 0}";
