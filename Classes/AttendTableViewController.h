@@ -10,8 +10,10 @@
 
 
 @interface AttendTableViewController : UITableViewController {
-
+	NSMutableArray *attendEventsArray;
 }
+
+@property (nonatomic, retain) NSMutableArray *attendEventsArray;
 
 -(id)initWithTabBar;
 

@@ -7,9 +7,12 @@
 //
 
 #import "AttendTableViewController.h"
+#import "EventTableViewCell.h"
 #import <JSON/JSON.h>
 
 @implementation AttendTableViewController
+
+@synthesize attendEventsArray;
 
 -(id) initWithTabBar {
 	if ([self init]) {
@@ -38,7 +41,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+	
+	// init the url
+	NSURL *jsonURL = [NSURL URLWithString:@"http://api.meetup.com/events.json/?group_id=176399&key=5636775624194f22c6362e39225c51"];
+	
+	NSString *jsonData = [[NSString alloc] initWithContentsOfURL:jsonURL];
+	
+	if (jsonData == nil) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Webservice Down" message:@"The webservice you are accessing is down. Please try again later."  delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+		[alert show];	
+		[alert release];
+	}
+	else {
+		// converting the json data into an array
+		
+		NSDictionary *resultsMetaDictionary = [jsonData JSONValue];
+		self.attendEventsArray = [resultsMetaDictionary objectForKey:@"results"];
+	}
+	
+	// releasing the vars now
+	[jsonURL release];
+	[jsonData release];
 }
 
 
@@ -85,7 +108,7 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [self.attendEventsArray count];
 }
 
 
@@ -94,12 +117,18 @@
     
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    EventTableViewCell *cell = (EventTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[EventTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
     }
     
+    
     // Set up the cell...
+	
+	// setting the text
+	NSDictionary *itemAtIndex = (NSDictionary *)[self.attendEventsArray objectAtIndex:[indexPath row]];
+	NSString *title = [itemAtIndex objectForKey:@"name"];
+	[cell setData:title];
 
     return cell;
 }
