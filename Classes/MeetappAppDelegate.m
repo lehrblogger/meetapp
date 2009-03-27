@@ -18,7 +18,11 @@
 @synthesize tabBarController;
 
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {   
+- (void)applicationDidFinishLaunching:(UIApplication *)application { 
+	// this helps in debugging, so that you know "exactly" where your views are placed;
+	// if you see "red", you are looking at the bare window, otherwise use black
+	window.backgroundColor = [UIColor redColor];
+	
 	//set up a nav controller for each window (rather than a local one for all windows as in the blog WHY??)
 	UINavigationController *organizeNavigationController;
 	UINavigationController *attendNavigationController;

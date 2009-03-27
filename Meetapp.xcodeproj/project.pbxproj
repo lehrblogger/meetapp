@@ -13,11 +13,21 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		2D0C0DDC0F7C6219001E38AA /* AttendEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C0DDB0F7C6219001E38AA /* AttendEventViewController.m */; };
+		2D0C0E090F7C65E8001E38AA /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C0E040F7C65E8001E38AA /* NSCharacterSet_Extensions.m */; };
+		2D0C0E0A0F7C65E8001E38AA /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C0E060F7C65E8001E38AA /* CDataScanner_Extensions.m */; };
+		2D0C0E0B0F7C65E8001E38AA /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C0E080F7C65E8001E38AA /* NSDictionary_JSONExtensions.m */; };
 		2D2AD3400F7877EE00F04140 /* OrganizeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD33F0F7877EE00F04140 /* OrganizeTableViewController.m */; };
 		2D2AD3430F7877F700F04140 /* AttendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */; };
 		2D2AD3950F787C9B00F04140 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */; };
 		2D2AD3B50F787EBB00F04140 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */; };
 		2D2AD3BA0F787F3B00F04140 /* ExploreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */; };
+		2D9701670F7B550D00E23D43 /* MAEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9701660F7B550D00E23D43 /* MAEventData.m */; };
+		2D9B2D250F7C4A4800DAD7DA /* OrganizeEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B2D240F7C4A4800DAD7DA /* OrganizeEventViewController.m */; };
+		2D9B2D790F7C604F00DAD7DA /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B2D740F7C604F00DAD7DA /* CJSONScanner.m */; };
+		2D9B2D7A0F7C604F00DAD7DA /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B2D760F7C604F00DAD7DA /* CJSONSerializer.m */; };
+		2D9B2D7B0F7C604F00DAD7DA /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B2D780F7C604F00DAD7DA /* CJSONDeserializer.m */; };
+		2D9B2D7E0F7C608000DAD7DA /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B2D7D0F7C608000DAD7DA /* CDataScanner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +39,14 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D0C0DDA0F7C6219001E38AA /* AttendEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendEventViewController.h; sourceTree = "<group>"; };
+		2D0C0DDB0F7C6219001E38AA /* AttendEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendEventViewController.m; sourceTree = "<group>"; };
+		2D0C0E030F7C65E8001E38AA /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		2D0C0E040F7C65E8001E38AA /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		2D0C0E050F7C65E8001E38AA /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		2D0C0E060F7C65E8001E38AA /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		2D0C0E070F7C65E8001E38AA /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		2D0C0E080F7C65E8001E38AA /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		2D2AD33E0F7877EE00F04140 /* OrganizeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeTableViewController.h; sourceTree = "<group>"; };
 		2D2AD33F0F7877EE00F04140 /* OrganizeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeTableViewController.m; sourceTree = "<group>"; };
 		2D2AD3410F7877F700F04140 /* AttendTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendTableViewController.h; sourceTree = "<group>"; };
@@ -39,6 +57,18 @@
 		2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		2D2AD3B80F787F3B00F04140 /* ExploreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTableViewController.h; sourceTree = "<group>"; };
 		2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTableViewController.m; sourceTree = "<group>"; };
+		2D9701650F7B550D00E23D43 /* MAEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAEventData.h; path = ../MAEventData.h; sourceTree = "<group>"; };
+		2D9701660F7B550D00E23D43 /* MAEventData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAEventData.m; path = ../MAEventData.m; sourceTree = "<group>"; };
+		2D9B2D230F7C4A4800DAD7DA /* OrganizeEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeEventViewController.h; sourceTree = "<group>"; };
+		2D9B2D240F7C4A4800DAD7DA /* OrganizeEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeEventViewController.m; sourceTree = "<group>"; };
+		2D9B2D730F7C604F00DAD7DA /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		2D9B2D740F7C604F00DAD7DA /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		2D9B2D750F7C604F00DAD7DA /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		2D9B2D760F7C604F00DAD7DA /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		2D9B2D770F7C604F00DAD7DA /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		2D9B2D780F7C604F00DAD7DA /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		2D9B2D7C0F7C608000DAD7DA /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner.h; path = JSON/CDataScanner.h; sourceTree = "<group>"; };
+		2D9B2D7D0F7C608000DAD7DA /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner.m; path = JSON/CDataScanner.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Meetapp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meetapp_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,14 +90,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2D2AD33E0F7877EE00F04140 /* OrganizeTableViewController.h */,
-				2D2AD33F0F7877EE00F04140 /* OrganizeTableViewController.m */,
-				2D2AD3410F7877F700F04140 /* AttendTableViewController.h */,
-				2D2AD3420F7877F700F04140 /* AttendTableViewController.m */,
-				2D2AD3B80F787F3B00F04140 /* ExploreTableViewController.h */,
-				2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */,
-				2D2AD3B30F787EBB00F04140 /* SettingsViewController.h */,
-				2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */,
+				2D0C0E130F7C65F3001E38AA /* TouchJSON */,
+				2D9B2D230F7C4A4800DAD7DA /* OrganizeEventViewController.h */,
+				2D9B2D240F7C4A4800DAD7DA /* OrganizeEventViewController.m */,
+				2D0C0DDA0F7C6219001E38AA /* AttendEventViewController.h */,
+				2D0C0DDB0F7C6219001E38AA /* AttendEventViewController.m */,
+				2D9B2D3D0F7C4CF200DAD7DA /* MainViewControllers */,
+				2D9701650F7B550D00E23D43 /* MAEventData.h */,
+				2D9701660F7B550D00E23D43 /* MAEventData.m */,
 				2D2AD3930F787C9B00F04140 /* EventTableViewCell.h */,
 				2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */,
 				1D3623240D0F684500981E51 /* MeetappAppDelegate.h */,
@@ -122,6 +152,58 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D0C0E020F7C65E8001E38AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D0C0E030F7C65E8001E38AA /* NSCharacterSet_Extensions.h */,
+				2D0C0E040F7C65E8001E38AA /* NSCharacterSet_Extensions.m */,
+				2D0C0E050F7C65E8001E38AA /* CDataScanner_Extensions.h */,
+				2D0C0E060F7C65E8001E38AA /* CDataScanner_Extensions.m */,
+				2D0C0E070F7C65E8001E38AA /* NSDictionary_JSONExtensions.h */,
+				2D0C0E080F7C65E8001E38AA /* NSDictionary_JSONExtensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D0C0E130F7C65F3001E38AA /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				2D9B2D720F7C604F00DAD7DA /* JSON */,
+				2D9B2D7C0F7C608000DAD7DA /* CDataScanner.h */,
+				2D9B2D7D0F7C608000DAD7DA /* CDataScanner.m */,
+				2D0C0E020F7C65E8001E38AA /* Extensions */,
+			);
+			name = TouchJSON;
+			sourceTree = "<group>";
+		};
+		2D9B2D3D0F7C4CF200DAD7DA /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AD33E0F7877EE00F04140 /* OrganizeTableViewController.h */,
+				2D2AD33F0F7877EE00F04140 /* OrganizeTableViewController.m */,
+				2D2AD3410F7877F700F04140 /* AttendTableViewController.h */,
+				2D2AD3420F7877F700F04140 /* AttendTableViewController.m */,
+				2D2AD3B80F787F3B00F04140 /* ExploreTableViewController.h */,
+				2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */,
+				2D2AD3B30F787EBB00F04140 /* SettingsViewController.h */,
+				2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */,
+			);
+			name = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		2D9B2D720F7C604F00DAD7DA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2D9B2D730F7C604F00DAD7DA /* CJSONScanner.h */,
+				2D9B2D740F7C604F00DAD7DA /* CJSONScanner.m */,
+				2D9B2D750F7C604F00DAD7DA /* CJSONSerializer.h */,
+				2D9B2D760F7C604F00DAD7DA /* CJSONSerializer.m */,
+				2D9B2D770F7C604F00DAD7DA /* CJSONDeserializer.h */,
+				2D9B2D780F7C604F00DAD7DA /* CJSONDeserializer.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +266,16 @@
 				2D2AD3950F787C9B00F04140 /* EventTableViewCell.m in Sources */,
 				2D2AD3B50F787EBB00F04140 /* SettingsViewController.m in Sources */,
 				2D2AD3BA0F787F3B00F04140 /* ExploreTableViewController.m in Sources */,
+				2D9701670F7B550D00E23D43 /* MAEventData.m in Sources */,
+				2D9B2D250F7C4A4800DAD7DA /* OrganizeEventViewController.m in Sources */,
+				2D9B2D790F7C604F00DAD7DA /* CJSONScanner.m in Sources */,
+				2D9B2D7A0F7C604F00DAD7DA /* CJSONSerializer.m in Sources */,
+				2D9B2D7B0F7C604F00DAD7DA /* CJSONDeserializer.m in Sources */,
+				2D9B2D7E0F7C608000DAD7DA /* CDataScanner.m in Sources */,
+				2D0C0DDC0F7C6219001E38AA /* AttendEventViewController.m in Sources */,
+				2D0C0E090F7C65E8001E38AA /* NSCharacterSet_Extensions.m in Sources */,
+				2D0C0E0A0F7C65E8001E38AA /* CDataScanner_Extensions.m in Sources */,
+				2D0C0E0B0F7C65E8001E38AA /* NSDictionary_JSONExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
