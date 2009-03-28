@@ -11,6 +11,7 @@
 
 @interface AttendTableViewController : UITableViewController {
 	NSMutableArray *attendEventsArray;
+	NSMutableData *jsonData;
 }
 
 @property (nonatomic, retain) NSMutableArray *attendEventsArray;

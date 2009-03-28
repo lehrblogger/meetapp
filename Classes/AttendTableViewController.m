@@ -38,34 +38,82 @@
     return self;
 }
 */
-
+	
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-	// init the url
 	NSURL *jsonURL = [NSURL URLWithString:@"http://api.meetup.com/events.json/?group_id=176399&key=5636775624194f22c6362e39225c51"];
 	
-	NSString *jsonData = [[NSString alloc] initWithContentsOfURL:jsonURL];
+	NSURLRequest *jsonRequest = [NSURLRequest requestWithURL:jsonURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0];
 	
-	if (jsonData == nil) {
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+	NSURLConnection *jsonConnection = [[NSURLConnection alloc] initWithRequest:jsonRequest delegate:self];
+	
+	if (jsonConnection) {
+		jsonData = [[NSMutableData data] retain];
+	} else {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Webservice Down" message:@"The webservice you are accessing is down. Please try again later."  delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
 		[alert show];	
 		[alert release];
-	}
-	else {
-		// converting the json data into an array
-		
-		NSDictionary *resultsMetaDictionary = [jsonData JSONValue];
-		self.attendEventsArray = [resultsMetaDictionary objectForKey:@"results"];
-	}
+	}	
 	
-	// releasing the vars now
-	[jsonURL release];
-	[jsonData release];
+	//TODO do I need to release these?
+	//[jsonURL release];
+	//[jsonRequest release];
+}
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    // this method is called when the server has determined that it has enough information to create the NSURLResponse
+    // it can be called multiple times, for example in the case of a redirect, so each time we reset the data.
+	[jsonData setLength:0];
+}
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [jsonData appendData:data];
+}
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    [connection release];
+    [jsonData release];
+	
+	// inform the user
+    NSLog(@"Connection failed! Error - %@ %@", [error localizedDescription], [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+}
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    // do something with the data
+	NSString *jsonDataString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+	NSDictionary *resultsMetaDictionary = [jsonDataString JSONValue];
+	self.attendEventsArray = [resultsMetaDictionary objectForKey:@"results"];  
+	[self.tableView reloadData];
+	
+    // receivedData is declared as a method instance elsewhere
+    NSLog(@"Succeeded! Received %d bytes of data",[jsonData length]); 
+
+    // release the connection, and the data object
+    [connection release];
+    [jsonData release];
+	[jsonDataString release];
 }
 
+	/*
+	CGRect frame = CGRectMake(0.0, 0.0, 25.0, 25.0);
+	UIActivityIndicatorView *loading = [[UIActivityIndicatorView alloc] initWithFrame:frame];
+	[loading startAnimating];
+	[loading sizeToFit];
+	loading.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin |
+								UIViewAutoresizingFlexibleRightMargin |
+								UIViewAutoresizingFlexibleTopMargin |
+								UIViewAutoresizingFlexibleBottomMargin);
+	
+	// initing the bar button
+	UIBarButtonItem *loadingView = [[UIBarButtonItem alloc] initWithCustomView:loading];
+	[loading release];
+	loadingView.target = self;
+	
+	self.navigationItem.rightBarButtonItem = loadingView;
+	[NSThread detachNewThreadSelector: @selector(getJSON) toTarget:self withObject:nil];
+	self.navigationItem.rightBarButtonItem = nil;*/
+	
 
-/*`
+/*
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 }
@@ -122,10 +170,9 @@
         cell = [[[EventTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    
     // Set up the cell...
-	
 	// setting the text
+	//NSDictionary *itemAtIndex = (NSDictionary *)[[self.attendEventsArray objectAtIndex:[indexPath row]] JSONValue];
 	NSDictionary *itemAtIndex = (NSDictionary *)[self.attendEventsArray objectAtIndex:[indexPath row]];
 	NSString *title = [itemAtIndex objectForKey:@"name"];
 	[cell setData:title];
@@ -183,6 +230,7 @@
 
 
 - (void)dealloc {
+	[jsonData dealloc];
     [super dealloc];
 }
 
