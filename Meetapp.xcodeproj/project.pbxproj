@@ -19,8 +19,8 @@
 		2D2AD3950F787C9B00F04140 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */; };
 		2D2AD3B50F787EBB00F04140 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */; };
 		2D2AD3BA0F787F3B00F04140 /* ExploreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */; };
-		2D9701670F7B550D00E23D43 /* MAEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9701660F7B550D00E23D43 /* MAEventData.m */; };
 		2D9B2D250F7C4A4800DAD7DA /* OrganizeEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B2D240F7C4A4800DAD7DA /* OrganizeEventViewController.m */; };
+		2DE30D710F845E5B008232A7 /* MAEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE30D700F845E5B008232A7 /* MAEventData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +44,10 @@
 		2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		2D2AD3B80F787F3B00F04140 /* ExploreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTableViewController.h; sourceTree = "<group>"; };
 		2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTableViewController.m; sourceTree = "<group>"; };
-		2D9701650F7B550D00E23D43 /* MAEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAEventData.h; path = ../MAEventData.h; sourceTree = "<group>"; };
-		2D9701660F7B550D00E23D43 /* MAEventData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAEventData.m; path = ../MAEventData.m; sourceTree = "<group>"; };
 		2D9B2D230F7C4A4800DAD7DA /* OrganizeEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeEventViewController.h; sourceTree = "<group>"; };
 		2D9B2D240F7C4A4800DAD7DA /* OrganizeEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeEventViewController.m; sourceTree = "<group>"; };
+		2DE30D6F0F845E5B008232A7 /* MAEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAEventData.h; sourceTree = "<group>"; };
+		2DE30D700F845E5B008232A7 /* MAEventData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAEventData.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Meetapp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meetapp_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,13 +69,13 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2DE30D6F0F845E5B008232A7 /* MAEventData.h */,
+				2DE30D700F845E5B008232A7 /* MAEventData.m */,
 				2D9B2D230F7C4A4800DAD7DA /* OrganizeEventViewController.h */,
 				2D9B2D240F7C4A4800DAD7DA /* OrganizeEventViewController.m */,
 				2D0C0DDA0F7C6219001E38AA /* AttendEventViewController.h */,
 				2D0C0DDB0F7C6219001E38AA /* AttendEventViewController.m */,
 				2D9B2D3D0F7C4CF200DAD7DA /* MainViewControllers */,
-				2D9701650F7B550D00E23D43 /* MAEventData.h */,
-				2D9701660F7B550D00E23D43 /* MAEventData.m */,
 				2D2AD3930F787C9B00F04140 /* EventTableViewCell.h */,
 				2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */,
 				1D3623240D0F684500981E51 /* MeetappAppDelegate.h */,
@@ -207,9 +207,9 @@
 				2D2AD3950F787C9B00F04140 /* EventTableViewCell.m in Sources */,
 				2D2AD3B50F787EBB00F04140 /* SettingsViewController.m in Sources */,
 				2D2AD3BA0F787F3B00F04140 /* ExploreTableViewController.m in Sources */,
-				2D9701670F7B550D00E23D43 /* MAEventData.m in Sources */,
 				2D9B2D250F7C4A4800DAD7DA /* OrganizeEventViewController.m in Sources */,
 				2D0C0DDC0F7C6219001E38AA /* AttendEventViewController.m in Sources */,
+				2DE30D710F845E5B008232A7 /* MAEventData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

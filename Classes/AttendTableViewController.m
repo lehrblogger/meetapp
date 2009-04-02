@@ -8,11 +8,13 @@
 
 #import "AttendTableViewController.h"
 #import "EventTableViewCell.h"
+#import "MAEventData.h"
 #import <JSON/JSON.h>
 
 @implementation AttendTableViewController
 
 @synthesize attendEventsArray;
+@synthesize attendDataArray;
 
 -(id) initWithTabBar {
 	if ([self init]) {
@@ -81,15 +83,25 @@
     // do something with the data
 	NSString *jsonDataString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 	NSDictionary *resultsMetaDictionary = [jsonDataString JSONValue];
-	self.attendEventsArray = [resultsMetaDictionary objectForKey:@"results"];  
+	self.attendDataArray = [resultsMetaDictionary objectForKey:@"results"];  
+	
+	self.attendEventsArray = [[NSMutableArray alloc] init];
+	for (id elem in self.attendDataArray) {
+		NSDictionary *eventDictonary = (NSDictionary *)elem;
+		MAEventData *newEvent = [[MAEventData alloc] initWithDictionary:eventDictonary];
+		[self.attendEventsArray addObject:newEvent];
+	}
+	
+	
 	[self.tableView reloadData];
 	
     // receivedData is declared as a method instance elsewhere
-    NSLog(@"Succeeded! Received %d bytes of data",[jsonData length]); 
+  NSLog(@"Succeeded! Received %d bytes of data",[jsonData length]); 
 
     // release the connection, and the data object
-    [connection release];
-    [jsonData release];
+	//TODO release Data array????
+	[connection release];
+	[jsonData release];
 	[jsonDataString release];
 }
 
@@ -173,9 +185,8 @@
     // Set up the cell...
 	// setting the text
 	//NSDictionary *itemAtIndex = (NSDictionary *)[[self.attendEventsArray objectAtIndex:[indexPath row]] JSONValue];
-	NSDictionary *itemAtIndex = (NSDictionary *)[self.attendEventsArray objectAtIndex:[indexPath row]];
-	NSString *title = [itemAtIndex objectForKey:@"name"];
-	[cell setData:title];
+	MAEventData *eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
+	[cell setData:eventAtIndex.eventName];
 
     return cell;
 }
@@ -231,7 +242,7 @@
 
 - (void)dealloc {
 	[jsonData dealloc];
-    [super dealloc];
+	[super dealloc];
 }
 
 

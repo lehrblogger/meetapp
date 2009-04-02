@@ -1,0 +1,4 @@
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m: In function '-[MAEventData encodeWithCoder:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:129: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:139: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:140: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
