@@ -3,7 +3,7 @@
 //  Meetapp
 //
 //  Created by Steven Lehrburger on 3/23/09.
-//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//  Copyright 2009 Steven Lehrburger. All rights reserved.
 //
 
 #import "MeetappAppDelegate.h"
@@ -21,7 +21,7 @@
 	NSString *myKey = @"5636775624194f22c6362e39225c51";
 	http://api.meetup.com/groups.json/?member_id=6376832
 	dataManager = [[MADataManager alloc] initWithMemberIdAndKey:myId key:myKey ];
-	[dataManager beginAllDataUpdate];
+	[dataManager updateAllData];
 	
 	// this helps in debugging, so that you know "exactly" where your views are placed;
 	// if you see "red", you are looking at the bare window, otherwise use black
@@ -47,8 +47,8 @@
 	AttendTableViewController *attendTableViewController;
 	ExploreTableViewController *exploreTableViewController;
 	SettingsViewController *settingsViewController;
-	organizeTableViewController = [[OrganizeTableViewController alloc] initWithTabBar];
-	attendTableViewController = [[AttendTableViewController alloc] initWithTabBar];
+	organizeTableViewController = [[OrganizeTableViewController alloc] initWithTabBarAndDataManager:dataManager];
+	attendTableViewController = [[AttendTableViewController alloc] initWithTabBarAndDataManager:dataManager];
 	exploreTableViewController = [[ExploreTableViewController alloc] initWithTabBar];
 	settingsViewController = [[SettingsViewController alloc] initWithTabBar];
 

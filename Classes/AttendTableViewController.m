@@ -3,7 +3,7 @@
 //  Meetapp
 //
 //  Created by Steven Lehrburger on 3/23/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Steven Lehrburger. All rights reserved.
 //
 
 #import "AttendTableViewController.h"
@@ -14,10 +14,9 @@
 
 @implementation AttendTableViewController
 
-@synthesize attendEventsArray;
-@synthesize attendDataArray;
+@synthesize dataManager, attendEventsArray;
 
--(id) initWithTabBar {
+-(id) initWithTabBarAndDataManager:(MADataManager*)aDataManager {
 	if ([self init]) {
 		//this is the label on the tab button itself
 		self.title = @"Attend";
@@ -27,10 +26,11 @@
 		
 		// set the long name shown in the navigation bar at the top
 		self.navigationItem.title=@"Attend";
+		self.dataManager = aDataManager;
 	}
 	return self;
-	
 }
+
 
 
 /*
@@ -42,67 +42,11 @@
 }
 */
 	
+
 - (void)viewDidLoad {
-    [super viewDidLoad];
-	NSURL *jsonURL = [NSURL URLWithString:@"http://api.meetup.com/events.json/?group_id=176399&key=5636775624194f22c6362e39225c51"];
-
-	NSURLRequest *jsonRequest = [NSURLRequest requestWithURL:jsonURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0];
-	
-	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-	NSURLConnection *jsonConnection = [[NSURLConnection alloc] initWithRequest:jsonRequest delegate:self];
-	
-	if (jsonConnection) {
-		jsonData = [[NSMutableData data] retain];
-	} else {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Webservice Down" message:@"The webservice you are accessing is down. Please try again later."  delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-		[alert show];	
-		[alert release];
-	}	
-	
-	//TODO do I need to release these?
-	//[jsonURL release];
-	//[jsonRequest release];
-}
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-    // this method is called when the server has determined that it has enough information to create the NSURLResponse
-    // it can be called multiple times, for example in the case of a redirect, so each time we reset the data.
-	[jsonData setLength:0];
-}
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    [jsonData appendData:data];
-}
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    [connection release];
-    [jsonData release];
-	
-	// inform the user
-    NSLog(@"Connection failed! Error - %@ %@", [error localizedDescription], [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
-	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-}
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    // do something with the data
-	NSString *jsonDataString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-	NSDictionary *resultsMetaDictionary = [jsonDataString JSONValue];
-	self.attendDataArray = [resultsMetaDictionary objectForKey:@"results"];  
-	
-	self.attendEventsArray = [[NSMutableArray alloc] init];
-	for (id elem in self.attendDataArray) {
-		NSDictionary *eventDictonary = (NSDictionary *)elem;
-		MAEventData *newEvent = [[MAEventData alloc] initWithDictionary:eventDictonary];
-		[self.attendEventsArray addObject:newEvent];
-	}
-	
+	[super viewDidLoad];
+	attendEventsArray = dataManager.eventList;
 	[self.tableView reloadData];
-	
-    // receivedData is declared as a method instance elsewhere
-  NSLog(@"Succeeded! Received %d bytes of data",[jsonData length]); 
-
-    // release the connection, and the data object
-	//TODO release Data array????
-	[connection release];
-	[jsonData release];
-	[jsonDataString release];
 }
 
 	/*
@@ -244,7 +188,7 @@
 
 
 - (void)dealloc {
-	[jsonData dealloc];
+	//TODO dealloc array?
 	[super dealloc];
 }
 

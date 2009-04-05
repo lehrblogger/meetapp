@@ -3,7 +3,7 @@
 //  Meetapp
 //
 //  Created by Steven Lehrburger on 3/23/09.
-//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//  Copyright 2009 Steven Lehrburger All rights reserved.
 //
 
 // http://jefferator.blogspot.com/2009/01/iphone-programming-tutorial-creating.html

@@ -3,7 +3,7 @@
 //  Meetapp
 //
 //  Created by Steven Lehrburger on 3/23/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Steven Lehrburger. All rights reserved.
 //
 
 #import "OrganizeTableViewController.h"
@@ -12,7 +12,9 @@
 
 @implementation OrganizeTableViewController
 
--(id) initWithTabBar {
+@synthesize dataManager, organizeEventsArray;
+
+-(id) initWithTabBarAndDataManager:(MADataManager*)aDataManager {
 	if ([self init]) {
 		//this is the label on the tab button itself
 		self.title = @"Organize";
@@ -22,6 +24,7 @@
 		
 		// set the long name shown in the navigation bar at the top
 		self.navigationItem.title=@"Organize";
+		self.dataManager = aDataManager;
 	}
 	return self;
 	
@@ -38,16 +41,13 @@
 */
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-	
 	// must end initWithObject with nil
-	organizeEventsArray = [[NSMutableArray alloc] initWithObjects:@"meetup1", @"meetup2", @"meetup3", @"meetup4", @"meetup5", @"meetup6", @"meetup7", @"meetup8", nil];
+	organizeEventsArray = dataManager.eventList;
  
 	[self.tableView reloadData];
- }
+}
  
 
 /*

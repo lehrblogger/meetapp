@@ -2,8 +2,8 @@
 //  MAEventData.m
 //  Meetapp
 //
-//  Created by David Nolen on 3/30/09.
-//  Copyright 2009 David Nolen. All rights reserved.
+//  Created by Steven Lehrburger on 3/30/09, based on work by David Nolen.
+//  Copyright 2009 Steven Lehrburger. All rights reserved.
 //
 
 #import "MAEventData.h"

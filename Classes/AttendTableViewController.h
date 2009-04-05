@@ -3,21 +3,21 @@
 //  Meetapp
 //
 //  Created by Steven Lehrburger on 3/23/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Steven Lehrburger. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "MADataManager.h"
 
 
 @interface AttendTableViewController : UITableViewController {
+	MADataManager *dataManager;
 	NSMutableArray *attendEventsArray;
-	NSMutableArray *attendDataArray;
-	NSMutableData *jsonData;
 }
 
-@property (nonatomic, retain) NSMutableArray *attendDataArray;
-@property (nonatomic, retain) NSMutableArray *attendEventsArray;
+@property(retain) MADataManager *dataManager;
+@property(retain)	NSMutableArray *attendEventsArray;
 
--(id)initWithTabBar;
+-(id) initWithTabBarAndDataManager:(MADataManager*)aDataManager;
 
 @end
