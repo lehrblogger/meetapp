@@ -22,6 +22,8 @@
 		2DE30D710F845E5B008232A7 /* MAEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE30D700F845E5B008232A7 /* MAEventData.m */; };
 		2DEFC93E0F886BA100B26D5A /* MADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC93D0F886BA100B26D5A /* MADataManager.m */; };
 		2DEFC9B00F8879C300B26D5A /* MAGroupData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC9AF0F8879C300B26D5A /* MAGroupData.m */; };
+		2DEFCB0E0F89213100B26D5A /* MADataDownloadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFCB0D0F89213100B26D5A /* MADataDownloadDelegate.m */; };
+		2DEFCB420F8926C900B26D5A /* LCURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFCB410F8926C900B26D5A /* LCURLConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,10 @@
 		2DEFC93D0F886BA100B26D5A /* MADataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADataManager.m; sourceTree = "<group>"; };
 		2DEFC9AE0F8879C300B26D5A /* MAGroupData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGroupData.h; sourceTree = "<group>"; };
 		2DEFC9AF0F8879C300B26D5A /* MAGroupData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGroupData.m; sourceTree = "<group>"; };
+		2DEFCB0C0F89213100B26D5A /* MADataDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADataDownloadDelegate.h; sourceTree = "<group>"; };
+		2DEFCB0D0F89213100B26D5A /* MADataDownloadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADataDownloadDelegate.m; sourceTree = "<group>"; };
+		2DEFCB400F8926C900B26D5A /* LCURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCURLConnection.h; sourceTree = "<group>"; };
+		2DEFCB410F8926C900B26D5A /* LCURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCURLConnection.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Meetapp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meetapp_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +78,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2DEFCB400F8926C900B26D5A /* LCURLConnection.h */,
+				2DEFCB410F8926C900B26D5A /* LCURLConnection.m */,
+				2DEFCB0C0F89213100B26D5A /* MADataDownloadDelegate.h */,
+				2DEFCB0D0F89213100B26D5A /* MADataDownloadDelegate.m */,
 				2DEFC93C0F886BA100B26D5A /* MADataManager.h */,
 				2DEFC93D0F886BA100B26D5A /* MADataManager.m */,
 				2DE30D6F0F845E5B008232A7 /* MAEventData.h */,
@@ -216,6 +226,8 @@
 				2DE30D710F845E5B008232A7 /* MAEventData.m in Sources */,
 				2DEFC93E0F886BA100B26D5A /* MADataManager.m in Sources */,
 				2DEFC9B00F8879C300B26D5A /* MAGroupData.m in Sources */,
+				2DEFCB0E0F89213100B26D5A /* MADataDownloadDelegate.m in Sources */,
+				2DEFCB420F8926C900B26D5A /* LCURLConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

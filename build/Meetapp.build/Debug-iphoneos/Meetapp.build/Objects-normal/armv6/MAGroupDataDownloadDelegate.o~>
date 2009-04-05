@@ -1,0 +1,25 @@
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:9:35: error: MADataDownloadDelegate.h: No such file or directory
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:13: warning: cannot find interface declaration for 'MADataDownloadDelegate'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:13: error: no declaration of property 'data' found in the interface
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:13: error: no declaration of property 'targetURL' found in the interface
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:15: error: can not use an object as parameter to a method
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m: In function '-[MADataDownloadDelegate initWithDataAndTarget:targetURL:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:16: error: no super class declared in @interface for 'MADataDownloadDelegate'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:19: error: request for member 'data' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:20: error: request for member 'targetURL' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m: In function '-[MADataDownloadDelegate connection:didReceiveResponse:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:28: error: 'data' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:28: error: (Each undeclared identifier is reported only once
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:28: error: for each function it appears in.)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m: In function '-[MADataDownloadDelegate connection:didReceiveData:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:32: warning: 'NSData' may not respond to '-appendData:'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:32: warning: (Messages without a matching method signature
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:32: warning: will be assumed to return 'id' and accept
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:32: warning: '...' as arguments.)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m: In function '-[MADataDownloadDelegate connection:didFailWithError:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:37: error: 'data' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m: In function '-[MADataDownloadDelegate connectionDidFinishLoading:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:47: error: 'jsonGroupData' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:48: warning: 'NSString' may not respond to '-JSONValue'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:49: error: request for member 'groupDataArray' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupDataDownloadDelegate.m:54: warning: 'MADataDownloadDelegate' may not respond to '-finishAllDataUpdate'
