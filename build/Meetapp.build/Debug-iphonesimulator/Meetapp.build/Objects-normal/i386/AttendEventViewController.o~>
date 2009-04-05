@@ -1,0 +1,17 @@
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:9:37: error: BasicEventViewController.h: No such file or directory
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:14: warning: cannot find interface declaration for 'BasicEventViewController'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:14: error: no declaration of property 'testLabel' found in the interface
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m: In function '-[BasicEventViewController init]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:26: error: no super class declared in @interface for 'BasicEventViewController'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:30: error: request for member 'title' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m: In function '-[BasicEventViewController loadView]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:49: error: request for member 'testLabel' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:50: error: 'testLabel' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:50: error: (Each undeclared identifier is reported only once
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:50: error: for each function it appears in.)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:54: error: request for member 'view' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m: In function '-[BasicEventViewController didReceiveMemoryWarning]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:75: error: no super class declared in @interface for 'BasicEventViewController'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m: In function '-[BasicEventViewController dealloc]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:81: error: 'testLabel' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/AttendEventViewController.m:82: error: no super class declared in @interface for 'BasicEventViewController'

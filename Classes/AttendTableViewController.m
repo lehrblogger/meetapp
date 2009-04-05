@@ -7,6 +7,7 @@
 //
 
 #import "AttendTableViewController.h"
+#import "MAEventViewController.h"
 #import "EventTableViewCell.h"
 #import "MAEventData.h"
 #import <JSON/JSON.h>
@@ -44,7 +45,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	NSURL *jsonURL = [NSURL URLWithString:@"http://api.meetup.com/events.json/?group_id=176399&key=5636775624194f22c6362e39225c51"];
-	
+
 	NSURLRequest *jsonRequest = [NSURLRequest requestWithURL:jsonURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0];
 	
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
@@ -91,7 +92,6 @@
 		MAEventData *newEvent = [[MAEventData alloc] initWithDictionary:eventDictonary];
 		[self.attendEventsArray addObject:newEvent];
 	}
-	
 	
 	[self.tableView reloadData];
 	
@@ -187,16 +187,19 @@
 	//NSDictionary *itemAtIndex = (NSDictionary *)[[self.attendEventsArray objectAtIndex:[indexPath row]] JSONValue];
 	MAEventData *eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
 	[cell setData:eventAtIndex.eventName];
-
+	//TODO release MAEventData
     return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController];
-	// [anotherViewController release];
+	MAEventData *eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
+	MAEventViewController *eventViewController = [[MAEventViewController alloc] initWithEvent:eventAtIndex];
+	
+	[[self navigationController] pushViewController:eventViewController animated:YES];
+	
+	[eventViewController release];
+	[eventAtIndex release];
 }
 
 

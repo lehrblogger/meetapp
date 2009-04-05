@@ -14,11 +14,15 @@
 
 @implementation MeetappAppDelegate
 
-@synthesize window;
-@synthesize tabBarController;
-
+@synthesize window, tabBarController, dataManager;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application { 
+	NSInteger myId = 6376832;
+	NSString *myKey = @"5636775624194f22c6362e39225c51";
+	http://api.meetup.com/groups.json/?member_id=6376832
+	dataManager = [[MADataManager alloc] initWithMemberIdAndKey:myId key:myKey ];
+	[dataManager beginAllDataUpdate];
+	
 	// this helps in debugging, so that you know "exactly" where your views are placed;
 	// if you see "red", you are looking at the bare window, otherwise use black
 	window.backgroundColor = [UIColor redColor];
@@ -62,7 +66,6 @@
 	[localControllersArray addObject:exploreNavigationController];
 	[localControllersArray addObject:settingsNavigationController];
 
-	
 	// release since we are done with this for now
 	[organizeNavigationController release];
 	[attendNavigationController release];
@@ -85,14 +88,15 @@
 	[window addSubview:tabBarController.view];
 	
 	// need this last line to display the window (and tab bar controller)
-    [window makeKeyAndVisible];
+	[window makeKeyAndVisible];
 }
 
 
 - (void)dealloc {
+	[dataManager release];
 	[tabBarController release];
-    [window release];
-    [super dealloc];
+	[window release];
+	[super dealloc];
 }
 
 

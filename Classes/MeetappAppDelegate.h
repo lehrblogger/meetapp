@@ -10,14 +10,17 @@
 // was useful for initial setup
 
 #import <UIKit/UIKit.h>
+#import "MADataManager.h"
 
 @interface MeetappAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
+	UIWindow *window;
 	UITabBarController *tabBarController;
+	MADataManager *dataManager;
 }
 
 @property (nonatomic, retain) UITabBarController *tabBarController;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) MADataManager *dataManager;
 
 @end
 

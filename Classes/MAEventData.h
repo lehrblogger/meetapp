@@ -59,7 +59,7 @@
 @property(nonatomic, copy) NSNumber *venueLon;
 @property(nonatomic, copy) NSNumber *lat;
 @property(nonatomic, copy) NSNumber *lon;
-
+/*
 - (id) initWithGroupName:(NSString *)aGroupName
 								eventName:(NSString *)aEventName
               description:(NSString *)aDescription
@@ -80,7 +80,7 @@
 	  		         venueLon:(NSNumber *)aVenueLon
                       lat:(NSNumber *)aLat
                       lon:(NSNumber *)aLon;
-
+*/
 - (id) initWithDictionary:(NSDictionary*)aEventData;
 
 @end

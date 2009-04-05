@@ -11,7 +11,7 @@
 @implementation MAEventData
 
 @synthesize groupName, eventName, description, eventId, time, updated, eventURL, photoURL, fee, feeDesc, feeCurrency, isMeetup, myRsvp, rsvpCount, attendeeCount, venueName, venueLat, venueLon, lat, lon;
-
+/*
 - (id) initWithGroupName:(NSString *)aGroupName
 							  eventName:(NSString *)aEventName
               description:(NSString *)aDescription
@@ -31,8 +31,7 @@
 			        	 venueLat:(NSNumber *)aVenueLat
 			        	 venueLon:(NSNumber *)aVenueLon
 				           	  lat:(NSNumber *)aLat
-				          	  lon:(NSNumber *)aLon
-{
+				          	  lon:(NSNumber *)aLon  {
   self = [super init];
   if (self != nil) 
   {
@@ -59,9 +58,8 @@
 	}
   return self;
 }
-
-- (id) initWithDictionary:(NSDictionary *)aEventData
-{
+*/
+- (id) initWithDictionary:(NSDictionary *)aEventData {
 	self = [super init];
   if (self != nil) 
   {
@@ -90,8 +88,7 @@
 }
 
 	
-- (id) initWithCoder:(NSCoder*)coder
-{
+- (id) initWithCoder:(NSCoder*)coder {
   self = [super init];
   
   if(self != nil)
@@ -121,8 +118,7 @@
   return self;
 }
 
-- (void) encodeWithCoder:(NSCoder*)coder
-{
+- (void) encodeWithCoder:(NSCoder*)coder {
   [coder encodeObject:self.groupName forKey:@"groupName"];
   [coder encodeObject:self.eventName forKey:@"eventName"];
   [coder encodeObject:self.description forKey:@"description"];
@@ -145,13 +141,11 @@
   [coder encodeObject:self.lon forKey:@"lon"];	
 }
 
-- (NSString*) description
-{
+- (NSString*) description {
   return [NSString stringWithFormat:@"<Group: %@  Event: %@, id:%d>", self.groupName, self.eventName, self.eventId];
 }
 
-- (void) dealloc
-{
+- (void) dealloc {
   [self.groupName release];
   [self.eventName release];
   [self.description release];
