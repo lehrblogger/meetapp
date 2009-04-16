@@ -98,15 +98,15 @@
 	NSString *response = [connection response];
 	NSDictionary *resultsMetaDictionary = [response JSONValue];
 	
-	if ([[[resultsMetaDictionary objectForKey:@"meta"] objectForKey:@"method"] isEqualTo:@"Groups"]) {
+	if ([[[resultsMetaDictionary objectForKey:@"meta"] objectForKey:@"method"] isEqualToString:@"Groups"]) {
 		NSLog(@"finishGroupListUpdate");
 		[self finishGroupListUpdate:[resultsMetaDictionary objectForKey:@"results"]];
 		
-  } else if([[[resultsMetaDictionary objectForKey:@"meta"] objectForKey:@"method"] isEqualTo:@"Events"]) {
+  } else if([[[resultsMetaDictionary objectForKey:@"meta"] objectForKey:@"method"] isEqualToString:@"Events"]) {
 		NSLog(@"finishEventListUpdate"); //%@", [resultsMetaDictionary objectForKey:@"results"]);
 		[self finishEventListUpdate:[resultsMetaDictionary objectForKey:@"results"]];
 		
-	} else if([[resultsMetaDictionary objectForKey:@"problem"] isEqualTo:@"Rate limit exceeded"]) {
+	} else if([[resultsMetaDictionary objectForKey:@"problem"] isEqualToString:@"Rate limit exceeded"]) {
 		NSLog(@"Rate limit exceeded");
 	}
 	
