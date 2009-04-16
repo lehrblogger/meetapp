@@ -55,11 +55,13 @@
     [super viewWillAppear:animated];
 }
 */
-/*
 - (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+	[super viewDidAppear:animated];
+	//organizeEventsArray = dataManager.eventList;
+ 
+	//[self.tableView reloadData];
+ 
 }
-*/
 /*
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];

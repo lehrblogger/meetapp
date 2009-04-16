@@ -10,11 +10,11 @@
 
 @implementation MAEventData
 
-@synthesize groupName, eventName, description, eventId, time, updated, eventURL, photoURL, fee, feeDesc, feeCurrency, isMeetup, myRsvp, rsvpCount, attendeeCount, venueName, venueLat, venueLon, lat, lon;
+@synthesize groupName, eventName, desc, eventId, time, updated, eventURL, photoURL, fee, feeDesc, feeCurrency, isMeetup, myRsvp, rsvpCount, attendeeCount, venueName, venueLat, venueLon, lat, lon;
 /*
 - (id) initWithGroupName:(NSString *)aGroupName
 							  eventName:(NSString *)aEventName
-              description:(NSString *)aDescription
+              desc:(NSString *)aDescription
 				          eventId:(NSInteger)aEventId
                      time:(NSDate *)aTime
 			        	  updated:(NSDate *)aUpdated
@@ -37,7 +37,7 @@
   {
 		self.groupName = aGroupName;
 		self.eventName = aEventName;
-		self.description = aDescription;
+		self.desc = aDescription;
 		self.eventId = aEventId;
 		self.time = aTime;
 		self.updated = aUpdated;
@@ -65,7 +65,7 @@
   {
 		self.groupName = [aEventData objectForKey:@"group_name"];
 		self.eventName = [aEventData objectForKey:@"name"];
-		self.description = [aEventData objectForKey:@"description"];
+		self.desc = [aEventData objectForKey:@"description"];
 		self.eventId = [[aEventData objectForKey:@"id"] integerValue];
 		self.time = [NSDate dateWithString:[aEventData objectForKey:@"time"]];
 		self.updated = [NSDate dateWithString:[aEventData objectForKey:@"updated"]];
@@ -95,7 +95,7 @@
   {
 	self.groupName = [coder decodeObjectForKey:@"groupName"];
 	self.eventName = [coder decodeObjectForKey:@"eventName"];
-	self.description = [coder decodeObjectForKey:@"description"];
+	self.desc = [coder decodeObjectForKey:@"description"];
 	self.eventId = [coder decodeIntForKey:@"eventId"];
 	self.time = [coder decodeObjectForKey:@"time"];
 	self.updated = [coder decodeObjectForKey:@"updated"];
@@ -121,7 +121,7 @@
 - (void) encodeWithCoder:(NSCoder*)coder {
   [coder encodeObject:self.groupName forKey:@"groupName"];
   [coder encodeObject:self.eventName forKey:@"eventName"];
-  [coder encodeObject:self.description forKey:@"description"];
+  [coder encodeObject:self.desc forKey:@"description"];
   [coder encodeObject:self.eventId forKey:@"eventId"];
   [coder encodeObject:self.time forKey:@"time"];
   [coder encodeObject:self.updated forKey:@"updated"];
@@ -148,7 +148,7 @@
 - (void) dealloc {
   [self.groupName release];
   [self.eventName release];
-  [self.description release];
+  [self.desc release];
   //[self.eventId release];
   [self.time release];
   [self.updated release];

@@ -47,6 +47,8 @@
 	[super viewDidLoad];
 	attendEventsArray = dataManager.eventList;
 	[self.tableView reloadData];
+	
+	//TODO fix this so it gets called more often
 }
 
 	/*
@@ -68,10 +70,9 @@
 	[NSThread detachNewThreadSelector: @selector(getJSON) toTarget:self withObject:nil];
 	self.navigationItem.rightBarButtonItem = nil;*/
 	
-
 /*
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+	[super viewWillAppear:animated];
 }
 */
 /*
