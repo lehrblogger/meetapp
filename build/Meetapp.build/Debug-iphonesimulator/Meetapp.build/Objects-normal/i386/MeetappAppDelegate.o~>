@@ -1,2 +1,0 @@
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MeetappAppDelegate.m:106: warning: property 'toolbarController' requires method '-toolbarController' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MeetappAppDelegate.m:106: warning: property 'toolbarController' requires the method 'setToolbarController:' to be defined - use @synthesize, @dynamic or provide a method implementation

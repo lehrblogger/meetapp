@@ -1,14 +1,4 @@
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:13: error: no declaration of property 'desc' found in the interface
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m: In function '-[MAEventData initWithDictionary:]':
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:68: error: request for member 'desc' in something not a structure or union
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m: In function '-[MAEventData initWithCoder:]':
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:98: error: request for member 'desc' in something not a structure or union
 /Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m: In function '-[MAEventData encodeWithCoder:]':
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:124: error: request for member 'desc' in something not a structure or union
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:125: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:135: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:136: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m: In function '-[MAEventData dealloc]':
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:151: error: request for member 'desc' in something not a structure or union
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m: At top level:
-/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:173: warning: property 'description' requires the method 'setDescription:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:129: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:139: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAEventData.m:140: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast

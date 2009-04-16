@@ -106,9 +106,9 @@
 		NSLog(@"finishEventListUpdate"); //%@", [resultsMetaDictionary objectForKey:@"results"]);
 		[self finishEventListUpdate:[resultsMetaDictionary objectForKey:@"results"]];
 		
-	}/* else if([[resultsMetaDictionary objectForKey:@"problem"] isEqualTo:@"Rate limit exceeded"]) {
+	} else if([[resultsMetaDictionary objectForKey:@"problem"] isEqualTo:@"Rate limit exceeded"]) {
 		NSLog(@"Rate limit exceeded");
-	}*/
+	}
 	
   [connection release];
 }

@@ -14,7 +14,7 @@
 
 @implementation MeetappAppDelegate
 
-@synthesize window, tabBarController, /*toolbarController,*/ dataManager;
+@synthesize window, tabBarController, dataManager;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application { 
 	NSInteger myId = 6376832;
@@ -86,8 +86,6 @@
 	
 	// add the tabBarController as a subview in the window
 	[window addSubview:tabBarController.view];
-//	[window addSubview:toolbarController];
-	
 	
 	// need this last line to display the window (and tab bar controller)
 	[window makeKeyAndVisible];
@@ -97,7 +95,6 @@
 - (void)dealloc {
 	[dataManager release];
 	[tabBarController release];
-//	[toolbarController release];
 	[window release];
 	[super dealloc];
 }

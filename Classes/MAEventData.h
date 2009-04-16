@@ -13,7 +13,7 @@
 {
 	NSString *groupName;
 	NSString *eventName;
-	NSString *desc;
+	NSString *description;
 	NSInteger eventId;
 	NSDate *time;
 	NSDate *updated;
@@ -38,7 +38,7 @@
 
 @property(nonatomic, copy) NSString *groupName;
 @property(nonatomic, copy) NSString *eventName;
-@property(nonatomic, copy) NSString *desc;
+@property(nonatomic, copy) NSString *description;
 @property(nonatomic, assign) NSInteger eventId;
 @property(nonatomic, copy) NSDate *time;
 @property(nonatomic, copy) NSDate *updated;
@@ -62,7 +62,7 @@
 /*
 - (id) initWithGroupName:(NSString *)aGroupName
 								eventName:(NSString *)aEventName
-              desc:(NSString *)aDescription
+              description:(NSString *)aDescription
                   eventId:(NSInteger)aEventId
                      time:(NSDate *)aTime
                   updated:(NSDate *)aUpdated

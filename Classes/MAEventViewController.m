@@ -42,13 +42,13 @@
 	
 	// Levi: Create the dimensions and centered position for our label
 	// screen width / 2 - label width / 2
-	CGFloat x = 0;//320/2 - 120/2;
+	CGFloat x = 320/2 - 120/2;
 	// screen height / 2 - label height / 2
-	CGFloat y = 0;//480/2 - 45/2;
-	CGRect rect = CGRectMake(x , y, 320.0f, 480.0f);
+	CGFloat y = 480/2 - 45/2;
+	CGRect rect = CGRectMake(x , y, 240.0f, 100.0f);
 
 	self.testText = [[[UITextView alloc] initWithFrame:rect] autorelease];
-	[testText setText:eventData.desc];
+	[testText setText:eventData.description];
 	[testText setTextAlignment:UITextAlignmentLeft];
 	
 	[contentView addSubview:testText];
