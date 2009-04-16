@@ -1,0 +1,10 @@
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m: In function '-[MAGroupData initWithCoder:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m:46: warning: passing argument 1 of 'setGroupId:' makes integer from pointer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m:50: warning: passing argument 1 of 'setNumMembers:' makes integer from pointer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m:59: warning: passing argument 1 of 'setZip:' makes integer from pointer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m:61: warning: passing argument 1 of 'setDaysLeft:' makes integer from pointer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m: In function '-[MAGroupData encodeWithCoder:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m:68: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m:72: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m:81: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MAGroupData.m:83: warning: passing argument 1 of 'encodeObject:forKey:' makes pointer from integer without a cast

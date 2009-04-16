@@ -83,7 +83,7 @@
   [coder encodeObject:self.daysLeft forKey:@"daysLeft"];
 }
 
-- (NSString*) description {
+- (NSString*) basicData {
   return [NSString stringWithFormat:@"<Group: %@, id:%d>", self.groupName, self.groupId];
 }
 
