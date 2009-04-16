@@ -141,7 +141,7 @@
   [coder encodeObject:self.lon forKey:@"lon"];	
 }
 
-- (NSString*) description {
+- (NSString*) basicData {
   return [NSString stringWithFormat:@"<Group: %@  Event: %@, id:%d>", self.groupName, self.eventName, self.eventId];
 }
 
