@@ -15,10 +15,12 @@
 @interface MeetappAppDelegate : NSObject <UIApplicationDelegate> {
 	UIWindow *window;
 	UITabBarController *tabBarController;
+	UIToolbar *toolbar;
 	MADataManager *dataManager;
 }
 
 @property (nonatomic, retain) UITabBarController *tabBarController;
+@property(nonatomic, retain) UIToolbar* toolbar;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) MADataManager *dataManager;
 

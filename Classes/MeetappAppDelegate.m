@@ -13,7 +13,7 @@
 
 @implementation MeetappAppDelegate
 
-@synthesize window, tabBarController, dataManager;
+@synthesize window, tabBarController, toolbar, dataManager;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application { 
 	NSInteger myId = 6376832;
@@ -31,13 +31,36 @@
 	UINavigationController *attendNavigationController;
 	UINavigationController *settingsNavigationController;
 
+	
 	// set up the window
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	[window setBackgroundColor:[UIColor blackColor]];
 	
+	// make the status bar black to match everything
+	[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
+	
+	NSInteger toolbarHeight = 40;	
+	NSInteger statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+
+	
+	// create the toolbar at the bottom
+	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+	CGRect toolbarRect = CGRectMake(0, screenRect.size.height - toolbarHeight + statusBarHeight, screenRect.size.width, toolbarHeight);
+	UIToolbar *aToolbar = [[UIToolbar alloc] initWithFrame:toolbarRect];
+	aToolbar.barStyle = UIBarStyleBlackOpaque;
+	self.toolbar = aToolbar;
+	[aToolbar release];
+	[self createToolbarItems];
+	[window addSubview:toolbar];
+	
 	// create tab bar controller and array to hold the view controllers
-	tabBarController = [[UITabBarController alloc] init];
-	NSMutableArray *localControllersArray = [[NSMutableArray alloc] initWithCapacity:4];
+	UITabBarController *aTabBarController = [[UITabBarController alloc] init];
+	CGRect tabBarRect = CGRectMake(0, statusBarHeight, screenRect.size.width, screenRect.size.height - toolbarHeight);
+	aTabBarController.view.frame = tabBarRect;
+	self.tabBarController = aTabBarController;
+	[aTabBarController release];
+	
+	NSMutableArray *localControllersArray = [[NSMutableArray alloc] initWithCapacity:3];
 
 	
 	// setup the first view controller (Root view controller)
@@ -53,6 +76,10 @@
 	attendNavigationController = [[UINavigationController alloc] initWithRootViewController:attendTableViewController];
 	settingsNavigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
 	
+	// make them all black
+	organizeNavigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
+	attendNavigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
+	settingsNavigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
 	
 	// add the new nav controller (with the root view controller inside it) to the array of controllers
 	[localControllersArray addObject:organizeNavigationController];
@@ -84,10 +111,49 @@
 
 
 - (void)dealloc {
+	[toolbar release];
 	[dataManager release];
 	[tabBarController release];
 	[window release];
 	[super dealloc];
+}
+
+- (void)createToolbarItems
+{	
+	// create the system-defined "OK or Done" button
+	UIBarButtonItem *systemItem = [[UIBarButtonItem alloc]
+																 initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+																 target:self action:@selector(action:)];
+
+	// flex item used to separate the left groups items and right grouped items
+	UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+																																						target:nil
+																																						action:nil];
+	
+	
+	// create a bordered style button with custom title	
+	NSInteger toolbarHeight = 40;	
+	NSInteger statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+	
+	
+	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+	CGRect updateLabelRect = CGRectMake(200, screenRect.size.height - toolbarHeight + statusBarHeight, screenRect.size.width - 200, toolbarHeight);
+	UILabel *updateLabel = [[UILabel alloc] initWithFrame:updateLabelRect];
+	updateLabel.backgroundColor = [UIColor clearColor];
+	updateLabel.opaque = NO;
+	updateLabel.textColor = [UIColor whiteColor];
+	updateLabel.highlightedTextColor = [UIColor whiteColor];
+	updateLabel.text = @"last updated on";
+	UIBarButtonItem *lastUpdateItem = [[UIBarButtonItem alloc] init];
+	lastUpdateItem.customView = updateLabel;
+	
+	NSArray *items = [NSArray arrayWithObjects: systemItem, flexItem, lastUpdateItem, nil];
+	[toolbar setItems:items animated:NO];
+	
+	[systemItem release];
+	[flexItem release];
+	[updateLabel release];
+	[lastUpdateItem release];
 }
 
 
