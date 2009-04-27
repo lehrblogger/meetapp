@@ -13,14 +13,18 @@
 
 @implementation MeetappAppDelegate
 
-@synthesize window, tabBarController, toolbar, dataManager;
+@synthesize window, tabBarController, toolbar, dataManager, refreshButtonItem, activityIndicatorItem;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application { 
+	toolbarHeight = 40;	
+	statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+	screenRect = [[UIScreen mainScreen] applicationFrame];
+	
 	NSInteger myId = 6376832;
 	NSString *myKey = @"5636775624194f22c6362e39225c51";
 	http://api.meetup.com/groups.json/?member_id=6376832
 	dataManager = [[MADataManager alloc] initWithMemberIdAndKey:myId key:myKey ];
-	[dataManager updateAllData];
+	//[dataManager updateAllData];
 	
 	// this helps in debugging, so that you know "exactly" where your views are placed;
 	// if you see "red", you are looking at the bare window, otherwise use black
@@ -39,12 +43,7 @@
 	// make the status bar black to match everything
 	[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
 	
-	NSInteger toolbarHeight = 40;	
-	NSInteger statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
-
-	
 	// create the toolbar at the bottom
-	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
 	CGRect toolbarRect = CGRectMake(0, screenRect.size.height - toolbarHeight + statusBarHeight, screenRect.size.width, toolbarHeight);
 	UIToolbar *aToolbar = [[UIToolbar alloc] initWithFrame:toolbarRect];
 	aToolbar.barStyle = UIBarStyleBlackOpaque;
@@ -118,13 +117,11 @@
 	[super dealloc];
 }
 
-- (void)createToolbarItems
-{	
-	// create the system-defined "OK or Done" button
-	UIBarButtonItem *systemItem = [[UIBarButtonItem alloc]
-																 initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
-																 target:self action:@selector(action:)];
-
+- (void)createToolbarItems {	
+	refreshButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+																																		 target:self action:@selector(startLoadingData)];
+	activityIndicatorItem = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+	
 	// flex item used to separate the left groups items and right grouped items
 	UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
 																																						target:nil
@@ -132,28 +129,44 @@
 	
 	
 	// create a bordered style button with custom title	
-	NSInteger toolbarHeight = 40;	
-	NSInteger statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
-	
-	
-	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
-	CGRect updateLabelRect = CGRectMake(200, screenRect.size.height - toolbarHeight + statusBarHeight, screenRect.size.width - 200, toolbarHeight);
+	CGRect updateLabelRect = CGRectMake(50, screenRect.size.height - toolbarHeight + statusBarHeight, screenRect.size.width - 50, toolbarHeight);
 	UILabel *updateLabel = [[UILabel alloc] initWithFrame:updateLabelRect];
 	updateLabel.backgroundColor = [UIColor clearColor];
 	updateLabel.opaque = NO;
 	updateLabel.textColor = [UIColor whiteColor];
 	updateLabel.highlightedTextColor = [UIColor whiteColor];
-	updateLabel.text = @"last updated on";
+	updateLabel.textAlignment = UITextAlignmentRight;
+	updateLabel.font = [UIFont systemFontOfSize: 12];
+	updateLabel.text = [dataManager getLastUpdatedString];
 	UIBarButtonItem *lastUpdateItem = [[UIBarButtonItem alloc] init];
 	lastUpdateItem.customView = updateLabel;
 	
-	NSArray *items = [NSArray arrayWithObjects: systemItem, flexItem, lastUpdateItem, nil];
+	NSArray *items = [NSArray arrayWithObjects: refreshButtonItem, flexItem, lastUpdateItem, nil];
 	[toolbar setItems:items animated:NO];
 	
-	[systemItem release];
+	[refreshButtonItem release];
 	[flexItem release];
 	[updateLabel release];
 	[lastUpdateItem release];
+}
+
+- (void)startLoadingData {
+	NSArray *items = [NSArray arrayWithObjects: activityIndicatorItem, [toolbar.items objectAtIndex:1], [toolbar.items objectAtIndex:2], nil];
+	[toolbar.items release];
+	[toolbar setItems:items animated:NO];
+	[activityIndicatorItem startAnimating];
+		
+	//[dataManager updateAllData];
+}
+
+
+- (void)dataDidLoad {	
+	[activityIndicatorItem stopAnimating];
+		
+	//[toolbar.items[2].text release];
+	//toolbar.items[2].text =  [dataManager getLastUpdatedString];
+	//reload tables
+	//stop icon spinning
 }
 
 

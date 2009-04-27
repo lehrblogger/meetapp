@@ -77,6 +77,10 @@
 }
  
 
+- (NSString*) getLastUpdatedString {
+	return [NSString stringWithFormat:@"last updated on %@", self.lastUpdated];
+}
+
 
 #pragma mark -
 #pragma mark LCURLConnection Delegate Methods

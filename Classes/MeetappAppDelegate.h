@@ -17,12 +17,22 @@
 	UITabBarController *tabBarController;
 	UIToolbar *toolbar;
 	MADataManager *dataManager;
+	NSInteger toolbarHeight;	
+	NSInteger statusBarHeight;
+	CGRect screenRect;
+	UIBarButtonItem *refreshButtonItem;
+	UIActivityIndicatorView *activityIndicatorItem;
 }
+
+- (void)createToolbarItems;
 
 @property (nonatomic, retain) UITabBarController *tabBarController;
 @property(nonatomic, retain) UIToolbar* toolbar;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) MADataManager *dataManager;
+
+@property (nonatomic, retain) UIBarButtonItem *refreshButtonItem;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicatorItem;
 
 @end
 

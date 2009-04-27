@@ -39,4 +39,6 @@
 - (void) beginGroupListUpdate;
 - (void) beginEventListUpdate:(NSInteger)aGroupId;
 
+- (NSString*) getLastUpdatedString;
+
 @end
