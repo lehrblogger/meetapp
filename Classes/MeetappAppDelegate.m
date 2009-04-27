@@ -151,12 +151,12 @@
 }
 
 - (void)startLoadingData {
-	NSArray *items = [NSArray arrayWithObjects: activityIndicatorItem, [toolbar.items objectAtIndex:1], [toolbar.items objectAtIndex:2], nil];
+/*(	NSArray *items = [NSArray arrayWithObjects: activityIndicatorItem, [toolbar.items objectAtIndex:1], [toolbar.items objectAtIndex:2], nil];
 	[toolbar.items release];
 	[toolbar setItems:items animated:NO];
 	[activityIndicatorItem startAnimating];
-		
-	//[dataManager updateAllData];
+	*/	
+	[dataManager updateAllData];
 }
 
 
