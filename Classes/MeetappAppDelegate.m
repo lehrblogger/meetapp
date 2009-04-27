@@ -9,7 +9,6 @@
 #import "MeetappAppDelegate.h"
 #import "OrganizeTableViewController.h"
 #import "AttendTableViewController.h"
-#import "ExploreTableViewController.h"
 #import "SettingsViewController.h"
 
 @implementation MeetappAppDelegate
@@ -30,7 +29,6 @@
 	//set up a nav controller for each window (rather than a local one for all windows as in the blog WHY??)
 	UINavigationController *organizeNavigationController;
 	UINavigationController *attendNavigationController;
-	UINavigationController *exploreNavigationController;
 	UINavigationController *settingsNavigationController;
 
 	// set up the window
@@ -44,37 +42,30 @@
 	
 	// setup the first view controller (Root view controller)
 	OrganizeTableViewController *organizeTableViewController;
-	AttendTableViewController *attendTableViewController;
-	ExploreTableViewController *exploreTableViewController;
-	SettingsViewController *settingsViewController;
+	AttendTableViewController *attendTableViewController;	SettingsViewController *settingsViewController;
 	organizeTableViewController = [[OrganizeTableViewController alloc] initWithTabBarAndDataManager:dataManager];
 	attendTableViewController = [[AttendTableViewController alloc] initWithTabBarAndDataManager:dataManager];
-	exploreTableViewController = [[ExploreTableViewController alloc] initWithTabBar];
 	settingsViewController = [[SettingsViewController alloc] initWithTabBar];
 
 	
 	// create the nav controller and add the root view controller as its first view
 	organizeNavigationController = [[UINavigationController alloc] initWithRootViewController:organizeTableViewController];
 	attendNavigationController = [[UINavigationController alloc] initWithRootViewController:attendTableViewController];
-	exploreNavigationController = [[UINavigationController alloc] initWithRootViewController:exploreTableViewController];
 	settingsNavigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
 	
 	
 	// add the new nav controller (with the root view controller inside it) to the array of controllers
 	[localControllersArray addObject:organizeNavigationController];
 	[localControllersArray addObject:attendNavigationController];
-	[localControllersArray addObject:exploreNavigationController];
 	[localControllersArray addObject:settingsNavigationController];
 
 	// release since we are done with this for now
 	[organizeNavigationController release];
 	[attendNavigationController release];
-	[exploreNavigationController release];
 	[settingsNavigationController release];
 	
 	[organizeTableViewController release];
 	[attendTableViewController release];
-	[exploreTableViewController release];
 	[settingsViewController release];
 	
 	

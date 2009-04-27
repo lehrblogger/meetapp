@@ -18,7 +18,6 @@
 		2D2AD3430F7877F700F04140 /* AttendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3420F7877F700F04140 /* AttendTableViewController.m */; };
 		2D2AD3950F787C9B00F04140 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */; };
 		2D2AD3B50F787EBB00F04140 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */; };
-		2D2AD3BA0F787F3B00F04140 /* ExploreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */; };
 		2DE30D710F845E5B008232A7 /* MAEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE30D700F845E5B008232A7 /* MAEventData.m */; };
 		2DEFC93E0F886BA100B26D5A /* MADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC93D0F886BA100B26D5A /* MADataManager.m */; };
 		2DEFC9B00F8879C300B26D5A /* MAGroupData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC9AF0F8879C300B26D5A /* MAGroupData.m */; };
@@ -44,8 +43,6 @@
 		2D2AD3940F787C9B00F04140 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		2D2AD3B30F787EBB00F04140 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		2D2AD3B80F787F3B00F04140 /* ExploreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTableViewController.h; sourceTree = "<group>"; };
-		2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTableViewController.m; sourceTree = "<group>"; };
 		2DE30D6F0F845E5B008232A7 /* MAEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAEventData.h; sourceTree = "<group>"; };
 		2DE30D700F845E5B008232A7 /* MAEventData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAEventData.m; sourceTree = "<group>"; };
 		2DEFC93C0F886BA100B26D5A /* MADataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADataManager.h; sourceTree = "<group>"; };
@@ -157,8 +154,6 @@
 				2D2AD33F0F7877EE00F04140 /* OrganizeTableViewController.m */,
 				2D2AD3410F7877F700F04140 /* AttendTableViewController.h */,
 				2D2AD3420F7877F700F04140 /* AttendTableViewController.m */,
-				2D2AD3B80F787F3B00F04140 /* ExploreTableViewController.h */,
-				2D2AD3B90F787F3B00F04140 /* ExploreTableViewController.m */,
 				2D2AD3B30F787EBB00F04140 /* SettingsViewController.h */,
 				2D2AD3B40F787EBB00F04140 /* SettingsViewController.m */,
 			);
@@ -224,7 +219,6 @@
 				2D2AD3430F7877F700F04140 /* AttendTableViewController.m in Sources */,
 				2D2AD3950F787C9B00F04140 /* EventTableViewCell.m in Sources */,
 				2D2AD3B50F787EBB00F04140 /* SettingsViewController.m in Sources */,
-				2D2AD3BA0F787F3B00F04140 /* ExploreTableViewController.m in Sources */,
 				2D0C0DDC0F7C6219001E38AA /* MAEventViewController.m in Sources */,
 				2DE30D710F845E5B008232A7 /* MAEventData.m in Sources */,
 				2DEFC93E0F886BA100B26D5A /* MADataManager.m in Sources */,

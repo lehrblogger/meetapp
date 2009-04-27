@@ -75,7 +75,7 @@
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 	[[LCURLConnection alloc] initWithURL:requestString delegate:self];
 }
-
+ 
 
 
 #pragma mark -
