@@ -60,6 +60,7 @@
 		for (id gElem in self.groupList) {
 			if ([[eventDictonary objectForKey:@"group_name"]  isEqualToString:[(MAGroupData *)gElem getName]]) {
 				groupForEvent = (MAGroupData *)gElem;
+				NSLog(@"assigned, breaking");
 				break;
 			}
 		}

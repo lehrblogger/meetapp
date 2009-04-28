@@ -64,6 +64,9 @@
 	[self.attendEventsArray release];
 	[self.organizeEventsArray release];
 	
+	self.attendEventsArray = [[NSMutableArray alloc] init];
+	self.organizeEventsArray = [[NSMutableArray alloc] init];
+	
 	for (id elem in events) {
 		MAGroupData *group = [(MAEventData*)elem getGroup];
 		NSString *organizeprofileURL = [group getOrganizerProfileURL];
@@ -73,7 +76,6 @@
 		}
 		[self.attendEventsArray addObject:elem];
 	}
-	NSLog(@"attendEventsArray count= %d", [self.attendEventsArray count]);
 }
 
 
@@ -140,24 +142,32 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.attendEventsArray count];
+	if([(UISegmentedControl*)self.navigationItem.titleView selectedSegmentIndex]) {
+		return [self.organizeEventsArray count];
+	} else {
+		return [self.attendEventsArray count];
+	}
 }
 
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	static NSString *CellIdentifier = @"Cell";
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    MAEventTableViewCell *cell = (MAEventTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[MAEventTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
-    }
+	MAEventTableViewCell *cell = (MAEventTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil) {
+		cell = [[[MAEventTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+	}
     
     // Set up the cell...
 	// setting the text
 	//NSDictionary *itemAtIndex = (NSDictionary *)[[self.attendEventsArray objectAtIndex:[indexPath row]] JSONValue];
-	MAEventData *eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
+	MAEventData *eventAtIndex;
+	if([(UISegmentedControl*)self.navigationItem.titleView selectedSegmentIndex]) {
+		eventAtIndex = (MAEventData*)[self.organizeEventsArray objectAtIndex:[indexPath row]];
+	} else {
+		eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
+	}
 	[cell setData:eventAtIndex.eventName];
 	//TODO release MAEventData
     return cell;
@@ -165,7 +175,13 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	MAEventData *eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
+	MAEventData *eventAtIndex;
+	if([(UISegmentedControl*)self.navigationItem.titleView selectedSegmentIndex]) {
+		eventAtIndex = (MAEventData*)[self.organizeEventsArray objectAtIndex:[indexPath row]];
+	} else {
+		eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
+	}
+	
 	MAEventViewController *eventViewController = [[MAEventViewController alloc] initWithEvent:eventAtIndex];
 	
 	[[self navigationController] pushViewController:eventViewController animated:YES];
