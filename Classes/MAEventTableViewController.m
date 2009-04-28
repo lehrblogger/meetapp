@@ -14,17 +14,16 @@
 
 @implementation MAEventTableViewController
 
-@synthesize eventsArray;
+@synthesize memberId, organizeEventsArray, attendEventsArray;
 
 
-/*
-- (id)initWithStyle:(UITableViewStyle)style {
-    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:style]) {
-    }
-    return self;
+- (id)initWithMemberId:(NSString*)aMemberId {
+	if (self = [super init]) {
+		self.memberId = aMemberId;
+	}
+	return self;
 }
-*/
+
 	
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -55,11 +54,27 @@
 }
 
 - (void)reloadTableData:(NSMutableArray*)events {
-	eventsArray = events;
+	[self recreateFilteredArrays:events];
 	NSLog(@"reloading table data");
 	[self.tableView reloadData];
 }
 
+- (void)recreateFilteredArrays:(NSMutableArray*)events {
+	//TODO release events in arrays
+	[self.attendEventsArray release];
+	[self.organizeEventsArray release];
+	
+	for (id elem in events) {
+		MAGroupData *group = [(MAEventData*)elem getGroup];
+		NSString *organizeprofileURL = [group getOrganizerProfileURL];
+		
+		if ([organizeprofileURL hasSuffix: [memberId	stringByAppendingString:@"/"]]) {
+			[self.organizeEventsArray addObject:elem];
+		}
+		[self.attendEventsArray addObject:elem];
+	}
+	NSLog(@"attendEventsArray count= %d", [self.attendEventsArray count]);
+}
 
 
 	/*
@@ -125,7 +140,7 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.eventsArray count];
+    return [self.attendEventsArray count];
 }
 
 
@@ -142,7 +157,7 @@
     // Set up the cell...
 	// setting the text
 	//NSDictionary *itemAtIndex = (NSDictionary *)[[self.attendEventsArray objectAtIndex:[indexPath row]] JSONValue];
-	MAEventData *eventAtIndex = (MAEventData*)[self.eventsArray objectAtIndex:[indexPath row]];
+	MAEventData *eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
 	[cell setData:eventAtIndex.eventName];
 	//TODO release MAEventData
     return cell;
@@ -150,7 +165,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	MAEventData *eventAtIndex = (MAEventData*)[self.eventsArray objectAtIndex:[indexPath row]];
+	MAEventData *eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
 	MAEventViewController *eventViewController = [[MAEventViewController alloc] initWithEvent:eventAtIndex];
 	
 	[[self navigationController] pushViewController:eventViewController animated:YES];

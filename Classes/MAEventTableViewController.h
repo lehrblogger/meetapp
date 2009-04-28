@@ -9,11 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface MAEventTableViewController : UITableViewController {
-	NSMutableArray *eventsArray;
+	NSString *memberId;
+	NSMutableArray *attendEventsArray;
+	NSMutableArray *organizeEventsArray;
 }
 
-@property(retain)	NSMutableArray *eventsArray;
+@property (retain) NSString *memberId;
+@property (retain) NSMutableArray *attendEventsArray;
+@property (retain) NSMutableArray *organizeEventsArray;
 
-- (void)reloadTableData:(NSMutableArray*)events;
+- (id) initWithMemberId:(NSString*)aMemberId;
+- (void) reloadTableData:(NSMutableArray*)events;
+- (void)recreateFilteredArrays:(NSMutableArray*)events;
 
 @end

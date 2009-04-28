@@ -98,10 +98,6 @@
 - (void)startLoadingData {
 	[self.dataManager updateAllData];
 	updateLabel.text = [self.dataManager getLastUpdatedString];
-//	(	NSArray *items = [NSArray arrayWithObjects: activityIndicatorItem, [toolbar.items objectAtIndex:1], [toolbar.items objectAtIndex:2], nil];
-//	 [toolbar.items release];
-//	 [toolbar setItems:items animated:NO];
-//	 [activityIndicatorItem startAnimating];
 }
 	/*
 - (void)dataDidLoad {	

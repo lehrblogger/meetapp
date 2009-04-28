@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface MAGroupData : NSObject <NSCoding>
+@interface MAGroupData : NSObject// <NSCoding>
 {
 	NSInteger groupId;
 	NSString *groupName;
@@ -48,5 +48,8 @@
 @property(nonatomic, assign)NSInteger daysLeft;
 
 - (id) initWithDictionary:(NSDictionary*)aGroupData;
+- (NSString*) getName;
+- (NSString*) getOrganizerProfileURL;
+
 
 @end

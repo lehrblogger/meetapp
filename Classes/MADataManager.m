@@ -53,11 +53,21 @@
 }
 
 - (void) finishEventListUpdate:(NSMutableArray*)aEventDataArray {
-	for (id elem in aEventDataArray) {
-		NSDictionary *eventDictonary = (NSDictionary *)elem;
-		MAEventData *newEvent = [[MAEventData alloc] initWithDictionary:eventDictonary];
+	for (id eElem in aEventDataArray) {
+		NSDictionary *eventDictonary = (NSDictionary *)eElem;
+		
+		MAGroupData *groupForEvent;
+		for (id gElem in self.groupList) {
+			if ([[eventDictonary objectForKey:@"group_name"]  isEqualToString:[(MAGroupData *)gElem getName]]) {
+				groupForEvent = (MAGroupData *)gElem;
+				break;
+			}
+		}
+		
+		MAEventData *newEvent = [[MAEventData alloc] initWithDictionary:eventDictonary group:groupForEvent];
 		[self.eventList addObject:newEvent];
 	}
+	
 	if (self.eventTableViewController) {
 		[self.eventTableViewController reloadTableData:self.eventList];
 	} else {

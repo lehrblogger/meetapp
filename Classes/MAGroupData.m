@@ -37,7 +37,15 @@
   return self;
 }
 
+- (NSString*) getName {
+	return self.groupName;
+}
 
+- (NSString*) getOrganizerProfileURL {
+	return [self.organizerprofileURL absoluteString];
+}
+
+/*
 - (id) initWithCoder:(NSCoder*)coder {
   self = [super init];
   
@@ -86,7 +94,7 @@
 - (NSString*) basicData {
   return [NSString stringWithFormat:@"<Group: %@, id:%d>", self.groupName, self.groupId];
 }
-
+*/
 - (void) dealloc {
 //  [self.groupId release];
   [self.groupName release];

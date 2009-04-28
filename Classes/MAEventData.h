@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MAGroupData.h"
 
 
-@interface MAEventData : NSObject <NSCoding>
+@interface MAEventData : NSObject// <NSCoding>
 {
+	MAGroupData *group;
+	
 	NSString *groupName;
 	NSString *eventName;
 	NSString *description;
@@ -35,6 +38,8 @@
 	NSNumber *lat;
 	NSNumber *lon;
 }
+
+@property(nonatomic, retain) MAGroupData *group;
 
 @property(nonatomic, copy) NSString *groupName;
 @property(nonatomic, copy) NSString *eventName;
@@ -81,6 +86,7 @@
                       lat:(NSNumber *)aLat
                       lon:(NSNumber *)aLon;
 */
-- (id) initWithDictionary:(NSDictionary*)aEventData;
+- (id) initWithDictionary:(NSDictionary *)aEventData group:(MAGroupData *)aGroup;
+- (MAGroupData*) getGroup;
 
 @end

@@ -26,7 +26,7 @@
 	//[self startLoadingData];
 	
 	//http://blog.jayway.com/2009/03/22/uitoolbars-in-iphone-os-2x/
-	MAEventTableViewController *eventTableViewController = [[MAEventTableViewController alloc] init];	
+	MAEventTableViewController *eventTableViewController = [[MAEventTableViewController alloc] initWithMemberId:memberId];	
 	UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:eventTableViewController];
 	MAToolbarController* toolbarController = [[MAToolbarController alloc] initWithContentViewControllerAndDataManager:navController manager:dataManager];
 	[window addSubview:toolbarController.view];
