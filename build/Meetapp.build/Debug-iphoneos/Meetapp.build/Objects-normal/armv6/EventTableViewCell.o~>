@@ -1,0 +1,22 @@
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:9:33: error: MAEventTableViewCell.h: No such file or directory
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:15: warning: cannot find interface declaration for 'MAEventTableViewCell'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m: In function '-[MAEventTableViewCell initWithFrame:reuseIdentifier:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:16: error: no super class declared in @interface for 'MAEventTableViewCell'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:18: error: request for member 'target' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:19: error: request for member 'accessoryType' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:20: error: request for member 'accessoryAction' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:22: error: 'name' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:22: error: (Each undeclared identifier is reported only once
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:22: error: for each function it appears in.)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:29: warning: 'MAEventTableViewCell' may not respond to '-addSubview:'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:29: warning: (Messages without a matching method signature
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:29: warning: will be assumed to return 'id' and accept
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:29: warning: '...' as arguments.)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m: In function '-[MAEventTableViewCell setData:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:39: error: 'name' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:41: warning: 'MAEventTableViewCell' may not respond to '-setNeedsDisplay'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m: In function '-[MAEventTableViewCell setSelected:animated:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:46: error: no super class declared in @interface for 'MAEventTableViewCell'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m: In function '-[MAEventTableViewCell dealloc]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:59: error: 'name' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/EventTableViewCell.m:60: error: no super class declared in @interface for 'MAEventTableViewCell'

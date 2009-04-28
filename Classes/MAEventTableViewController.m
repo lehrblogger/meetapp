@@ -8,7 +8,7 @@
 
 #import "MAEventTableViewController.h"
 #import "MAEventViewController.h"
-#import "EventTableViewCell.h"
+#import "MAEventTableViewCell.h"
 #import "MAEventData.h"
 #import <JSON/JSON.h>
 
@@ -134,9 +134,9 @@
     
     static NSString *CellIdentifier = @"Cell";
     
-    EventTableViewCell *cell = (EventTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    MAEventTableViewCell *cell = (MAEventTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[EventTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[MAEventTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Set up the cell...

@@ -19,7 +19,7 @@
 		2D9913C90FA655E7009DA6AC /* MAGroupData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913C50FA655E7009DA6AC /* MAGroupData.m */; };
 		2D9913D30FA655F0009DA6AC /* MAEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913CC0FA655F0009DA6AC /* MAEventViewController.m */; };
 		2D9913D50FA655F0009DA6AC /* MAEventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */; };
-		2D9913E10FA65698009DA6AC /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913E00FA65698009DA6AC /* EventTableViewCell.m */; };
+		2D9913E10FA65698009DA6AC /* MAEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */; };
 		2D99152C0FA66B20009DA6AC /* MAToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D99152B0FA66B20009DA6AC /* MAToolbarController.m */; };
 		2DC9D9800FA6B47C005EF46D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9D97F0FA6B47C005EF46D /* Settings.bundle */; };
 		2DC9DA150FA6CBE0005EF46D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9DA140FA6CBE0005EF46D /* Icon.png */; };
@@ -47,8 +47,8 @@
 		2D9913CC0FA655F0009DA6AC /* MAEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAEventViewController.m; sourceTree = "<group>"; };
 		2D9913CF0FA655F0009DA6AC /* MAEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAEventTableViewController.h; sourceTree = "<group>"; };
 		2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAEventTableViewController.m; sourceTree = "<group>"; };
-		2D9913DF0FA65698009DA6AC /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
-		2D9913E00FA65698009DA6AC /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		2D9913DF0FA65698009DA6AC /* MAEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAEventTableViewCell.h; sourceTree = "<group>"; };
+		2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAEventTableViewCell.m; sourceTree = "<group>"; };
 		2D99152A0FA66B20009DA6AC /* MAToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAToolbarController.h; sourceTree = "<group>"; };
 		2D99152B0FA66B20009DA6AC /* MAToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAToolbarController.m; sourceTree = "<group>"; };
 		2DC9D97F0FA6B47C005EF46D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -73,11 +73,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2D9913DF0FA65698009DA6AC /* EventTableViewCell.h */,
-				2D9913E00FA65698009DA6AC /* EventTableViewCell.m */,
 				2D9913CB0FA655EF009DA6AC /* MAEventViewController.h */,
 				2D9913CC0FA655F0009DA6AC /* MAEventViewController.m */,
 				2D9913BD0FA655E7009DA6AC /* DataManagement */,
+				2D9913DF0FA65698009DA6AC /* MAEventTableViewCell.h */,
+				2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */,
 				2D9913CF0FA655F0009DA6AC /* MAEventTableViewController.h */,
 				2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */,
 				2D99152A0FA66B20009DA6AC /* MAToolbarController.h */,
@@ -223,7 +223,7 @@
 				2D9913C90FA655E7009DA6AC /* MAGroupData.m in Sources */,
 				2D9913D30FA655F0009DA6AC /* MAEventViewController.m in Sources */,
 				2D9913D50FA655F0009DA6AC /* MAEventTableViewController.m in Sources */,
-				2D9913E10FA65698009DA6AC /* EventTableViewCell.m in Sources */,
+				2D9913E10FA65698009DA6AC /* MAEventTableViewCell.m in Sources */,
 				2D99152C0FA66B20009DA6AC /* MAToolbarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
