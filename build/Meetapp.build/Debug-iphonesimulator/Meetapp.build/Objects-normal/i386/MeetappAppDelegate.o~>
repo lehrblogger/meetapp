@@ -1,0 +1,2 @@
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MeetappAppDelegate.m: In function '-[MeetappAppDelegate applicationDidFinishLaunching:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Classes/MeetappAppDelegate.m:26: warning: passing argument 1 of 'initWithMemberIdAndKey:key:' makes integer from pointer without a cast

@@ -15,6 +15,7 @@
 @synthesize contentViewController = _contentViewController;
 @synthesize toolbar = _toolbar;
 @synthesize dataManager = _dataManager;
+@synthesize updateLabel;
 
 -(id)initWithContentViewControllerAndDataManager:(UIViewController*)contentViewController manager:(MADataManager*)dataManager {
 	self = [super init];
@@ -67,23 +68,21 @@
  
 	UIBarButtonItem *refreshButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
 																																										 target:self action:@selector(startLoadingData)];
-
-	//activityIndicatorItem = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
  
 	// flex item used to separate the left groups items and right grouped items
 	UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
 																																						target:nil
 																																						action:nil];
- 
-	CGRect updateLabelRect = CGRectMake(50, 440, 200, 40);// screenRect.size.height - toolbarHeight + statusBarHeight, screenRect.size.width - 50, toolbarHeight);
-	UILabel *updateLabel = [[UILabel alloc] initWithFrame:updateLabelRect];
+	CGRect frame = _contentViewController.view.frame;
+	CGRect updateLabelRect = CGRectMake(50, frame.size.height - 44, frame.size.width - 50 , 44);
+	updateLabel = [[UILabel alloc] initWithFrame:updateLabelRect];
 	updateLabel.backgroundColor = [UIColor clearColor];
 	updateLabel.opaque = NO;
 	updateLabel.textColor = [UIColor whiteColor];
 	updateLabel.highlightedTextColor = [UIColor whiteColor];
 	updateLabel.textAlignment = UITextAlignmentRight;
-	updateLabel.font = [UIFont systemFontOfSize: 12];
-	updateLabel.text = @"dsfadsfadsfda";//[dataManager getLastUpdatedString];
+	updateLabel.font = [UIFont boldSystemFontOfSize: 13];
+	updateLabel.text = [self.dataManager getLastUpdatedString];
 	UIBarButtonItem *lastUpdateItem = [[UIBarButtonItem alloc] init];
 	lastUpdateItem.customView = updateLabel;
  
@@ -98,14 +97,15 @@
 
 - (void)startLoadingData {
 	[self.dataManager updateAllData];
+	updateLabel.text = [self.dataManager getLastUpdatedString];
 //	(	NSArray *items = [NSArray arrayWithObjects: activityIndicatorItem, [toolbar.items objectAtIndex:1], [toolbar.items objectAtIndex:2], nil];
 //	 [toolbar.items release];
 //	 [toolbar setItems:items animated:NO];
 //	 [activityIndicatorItem startAnimating];
 }
-	
 	/*
 - (void)dataDidLoad {	
+	
 	//reload tables 	[self.tableView reloadData];
 	//stop icon spinning
 	//change update text

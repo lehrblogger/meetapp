@@ -17,9 +17,12 @@
 @synthesize dataManager, refreshButtonItem, activityIndicatorItem;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {	
-	NSInteger myId = 6376832;
-	NSString *myKey = @"5636775624194f22c6362e39225c51";
-	dataManager = [[MADataManager alloc] initWithMemberIdAndKey:myId key:myKey ];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSString *memberId = [defaults stringForKey:@"member_id"];
+	NSString *apiKey = [defaults stringForKey:@"api_key"];
+	if (!memberId) {	memberId = @"";	}
+	if (!apiKey)   {	apiKey = @""; 	}
+	dataManager = [[MADataManager alloc] initWithMemberIdAndKey:memberId key:apiKey ];
 	//[self startLoadingData];
 	
 	//http://blog.jayway.com/2009/03/22/uitoolbars-in-iphone-os-2x/

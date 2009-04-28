@@ -11,8 +11,8 @@
 #import "MAEventTableViewController.h"
 
 @interface MADataManager : NSObject <LCURLConnectionDelegate> {
-	NSInteger memberId;
-	NSString *key;
+	NSString *memberId;
+	NSString *apiKey;
 	
 	NSMutableArray *groupList;
 	NSMutableArray *eventList;
@@ -21,8 +21,8 @@
 	MAEventTableViewController *eventTableViewController;
 }
 
-@property(assign) NSInteger memberId;
-@property(retain) NSString *key;
+@property(retain) NSString *memberId;
+@property(retain) NSString *apiKey;
 
 @property(retain) NSMutableArray *groupList;
 @property(retain) NSMutableArray *eventList;
@@ -30,7 +30,7 @@
 @property(retain) NSDate *lastUpdated;
 @property(retain) MAEventTableViewController *eventTableViewController;
 
-- (id) initWithMemberIdAndKey:(NSInteger)aMemberId key:(NSString*)aKey;
+- (id) initWithMemberIdAndKey:(NSString*)aMemberId key:(NSString*)aKey;
 - (void) updateAllData;
 - (void) finishGroupListUpdate:(NSMutableArray*)aGroupDataArray;
 - (void) finishEventListUpdate:(NSMutableArray*)aEventDataArray;

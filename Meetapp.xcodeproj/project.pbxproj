@@ -18,11 +18,10 @@
 		2D9913C80FA655E7009DA6AC /* MAEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913C30FA655E7009DA6AC /* MAEventData.m */; };
 		2D9913C90FA655E7009DA6AC /* MAGroupData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913C50FA655E7009DA6AC /* MAGroupData.m */; };
 		2D9913D30FA655F0009DA6AC /* MAEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913CC0FA655F0009DA6AC /* MAEventViewController.m */; };
-		2D9913D40FA655F0009DA6AC /* OrganizeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913CE0FA655F0009DA6AC /* OrganizeTableViewController.m */; };
 		2D9913D50FA655F0009DA6AC /* MAEventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */; };
-		2D9913D60FA655F0009DA6AC /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913D20FA655F0009DA6AC /* SettingsViewController.m */; };
 		2D9913E10FA65698009DA6AC /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913E00FA65698009DA6AC /* EventTableViewCell.m */; };
 		2D99152C0FA66B20009DA6AC /* MAToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D99152B0FA66B20009DA6AC /* MAToolbarController.m */; };
+		2DC9D9800FA6B47C005EF46D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9D97F0FA6B47C005EF46D /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,16 +44,13 @@
 		2D9913C50FA655E7009DA6AC /* MAGroupData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGroupData.m; sourceTree = "<group>"; };
 		2D9913CB0FA655EF009DA6AC /* MAEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAEventViewController.h; sourceTree = "<group>"; };
 		2D9913CC0FA655F0009DA6AC /* MAEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAEventViewController.m; sourceTree = "<group>"; };
-		2D9913CD0FA655F0009DA6AC /* OrganizeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeTableViewController.h; sourceTree = "<group>"; };
-		2D9913CE0FA655F0009DA6AC /* OrganizeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeTableViewController.m; sourceTree = "<group>"; };
 		2D9913CF0FA655F0009DA6AC /* MAEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAEventTableViewController.h; sourceTree = "<group>"; };
 		2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAEventTableViewController.m; sourceTree = "<group>"; };
-		2D9913D10FA655F0009DA6AC /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		2D9913D20FA655F0009DA6AC /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		2D9913DF0FA65698009DA6AC /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
 		2D9913E00FA65698009DA6AC /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		2D99152A0FA66B20009DA6AC /* MAToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAToolbarController.h; sourceTree = "<group>"; };
 		2D99152B0FA66B20009DA6AC /* MAToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAToolbarController.m; sourceTree = "<group>"; };
+		2DC9D97F0FA6B47C005EF46D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,13 +73,8 @@
 			children = (
 				2D9913DF0FA65698009DA6AC /* EventTableViewCell.h */,
 				2D9913E00FA65698009DA6AC /* EventTableViewCell.m */,
-				2D9913CA0FA655EF009DA6AC /* MainViewControllers */,
 				2D9913CB0FA655EF009DA6AC /* MAEventViewController.h */,
 				2D9913CC0FA655F0009DA6AC /* MAEventViewController.m */,
-				2D9913CD0FA655F0009DA6AC /* OrganizeTableViewController.h */,
-				2D9913CE0FA655F0009DA6AC /* OrganizeTableViewController.m */,
-				2D9913D10FA655F0009DA6AC /* SettingsViewController.h */,
-				2D9913D20FA655F0009DA6AC /* SettingsViewController.m */,
 				2D9913BD0FA655E7009DA6AC /* DataManagement */,
 				2D9913CF0FA655F0009DA6AC /* MAEventTableViewController.h */,
 				2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */,
@@ -106,6 +97,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				2DC9D97F0FA6B47C005EF46D /* Settings.bundle */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -158,13 +150,6 @@
 			name = DataManagement;
 			sourceTree = "<group>";
 		};
-		2D9913CA0FA655EF009DA6AC /* MainViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MainViewControllers;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				2DC9D9800FA6B47C005EF46D /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +218,7 @@
 				2D9913C80FA655E7009DA6AC /* MAEventData.m in Sources */,
 				2D9913C90FA655E7009DA6AC /* MAGroupData.m in Sources */,
 				2D9913D30FA655F0009DA6AC /* MAEventViewController.m in Sources */,
-				2D9913D40FA655F0009DA6AC /* OrganizeTableViewController.m in Sources */,
 				2D9913D50FA655F0009DA6AC /* MAEventTableViewController.m in Sources */,
-				2D9913D60FA655F0009DA6AC /* SettingsViewController.m in Sources */,
 				2D9913E10FA65698009DA6AC /* EventTableViewCell.m in Sources */,
 				2D99152C0FA66B20009DA6AC /* MAToolbarController.m in Sources */,
 			);

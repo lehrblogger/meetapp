@@ -14,14 +14,14 @@
 
 @implementation MADataManager
 
-@synthesize memberId, key, groupList, eventList, eventTableViewController, lastUpdated;
+@synthesize memberId, apiKey, groupList, eventList, eventTableViewController, lastUpdated;
 
-- (id) initWithMemberIdAndKey:(NSInteger)aMemberId key:(NSString*)aKey {
+- (id) initWithMemberIdAndKey:(NSString*)aMemberId key:(NSString*)aKey {
 	self = [super init];
   if (self != nil) 
   {
 		self.memberId = aMemberId;
-		self.key = aKey;	
+		self.apiKey = aKey;	
 	}
   return self;
 }
@@ -32,13 +32,14 @@
 
 - (void) updateAllData {
 	//clear existing groups and event lists
+	//TODO iterate through and remove objects?
 	if (self.groupList != nil) [self.groupList release];
 	if (self.eventList != nil) [self.eventList release];
 	
 	self.groupList = [[NSMutableArray alloc] init];
 	self.eventList = [[NSMutableArray alloc] init];
 	
-	//TODO check later for last updated date
+	lastUpdated = [NSDate date];
 	[self beginGroupListUpdate];
 }
 
@@ -67,7 +68,7 @@
 - (void) beginGroupListUpdate {
 	NSString *urlPartOne= @"http://api.meetup.com/groups.json/?member_id=";
 	NSString *urlPartTwo= @"&key=";
-	NSString *requestString = [urlPartOne stringByAppendingString:[[NSString stringWithFormat:@"%d", self.memberId] stringByAppendingString:[urlPartTwo stringByAppendingString: self.key]]];
+	NSString *requestString = [urlPartOne stringByAppendingString:[self.memberId stringByAppendingString:[urlPartTwo stringByAppendingString: self.apiKey]]];
 	NSLog(@"URL - %@", requestString);
 	
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
@@ -78,7 +79,7 @@
 - (void) beginEventListUpdate:(NSInteger)aGroupId {
 	NSString *urlPartOne= @"http://api.meetup.com/events.json/?group_id=";
 	NSString *urlPartTwo= @"&key=";
-	NSString *requestString = [urlPartOne stringByAppendingString:[[NSString stringWithFormat:@"%d", aGroupId] stringByAppendingString:[urlPartTwo stringByAppendingString: self.key]]];
+	NSString *requestString = [urlPartOne stringByAppendingString:[[NSString stringWithFormat:@"%d", aGroupId] stringByAppendingString:[urlPartTwo stringByAppendingString: self.apiKey]]];
 	NSLog(@"URL - %@", requestString);
 	
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
@@ -87,7 +88,11 @@
  
 
 - (NSString*) getLastUpdatedString {
-	return [NSString stringWithFormat:@"last updated on %@", self.lastUpdated];
+	if (self.lastUpdated) {
+		return [NSString stringWithFormat:@"last updated on %@", self.lastUpdated.description];
+	} else {
+		return @"no previous updates";	
+	}
 }
 
 

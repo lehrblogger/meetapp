@@ -13,11 +13,13 @@
 	UIViewController *_contentViewController;
 	UIToolbar *_toolbar;
 	MADataManager *_dataManager;
+	UILabel *updateLabel;
 }
 
 @property(nonatomic, retain, readonly) UIViewController *contentViewController;
 @property(nonatomic, retain, readonly) UIToolbar *toolbar;
 @property(nonatomic, retain, readonly) MADataManager *dataManager;
+@property(nonatomic, retain) UILabel *updateLabel;
 
 -(id)initWithContentViewControllerAndDataManager:(UIViewController*)contentViewController manager:(MADataManager*)dataManager;
 
