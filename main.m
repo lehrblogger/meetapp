@@ -2,8 +2,8 @@
 //  main.m
 //  Meetapp
 //
-//  Created by Steven Lehrburger on 3/23/09.
-//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//  Created by Steven Lehrburger on 4/27/09.
+//  Copyright Steven Lehrburger 2009. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

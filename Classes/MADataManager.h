@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LCURLConnection.h"
-
+#import "MAEventTableViewController.h"
 
 @interface MADataManager : NSObject <LCURLConnectionDelegate> {
 	NSInteger memberId;
@@ -17,20 +17,18 @@
 	NSMutableArray *groupList;
 	NSMutableArray *eventList;
 	
-	NSMutableArray *organizeEventsArray;
-	NSMutableArray *attendEventsArray;
-	
 	NSDate *lastUpdated;
+	MAEventTableViewController *eventTableViewController;
 }
 
 @property(assign) NSInteger memberId;
 @property(retain) NSString *key;
+
 @property(retain) NSMutableArray *groupList;
 @property(retain) NSMutableArray *eventList;
 
-@property(retain) NSMutableArray *organizeEventsArray;
-@property(retain) NSMutableArray *attendEventsArray;
 @property(retain) NSDate *lastUpdated;
+@property(retain) MAEventTableViewController *eventTableViewController;
 
 - (id) initWithMemberIdAndKey:(NSInteger)aMemberId key:(NSString*)aKey;
 - (void) updateAllData;
@@ -38,7 +36,7 @@
 - (void) finishEventListUpdate:(NSMutableArray*)aEventDataArray;
 - (void) beginGroupListUpdate;
 - (void) beginEventListUpdate:(NSInteger)aGroupId;
-
 - (NSString*) getLastUpdatedString;
+- (void) setTableViewController:(MAEventTableViewController*)eventTableViewController;
 
 @end

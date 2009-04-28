@@ -14,7 +14,7 @@
 
 @implementation MADataManager
 
-@synthesize memberId, key, groupList, eventList, organizeEventsArray, attendEventsArray, lastUpdated;
+@synthesize memberId, key, groupList, eventList, eventTableViewController, lastUpdated;
 
 - (id) initWithMemberIdAndKey:(NSInteger)aMemberId key:(NSString*)aKey {
 	self = [super init];
@@ -24,6 +24,10 @@
 		self.key = aKey;	
 	}
   return self;
+}
+
+- (void) setTableViewController:(MAEventTableViewController*)aEventTableViewController {
+	self.eventTableViewController = aEventTableViewController;
 }
 
 - (void) updateAllData {
@@ -52,6 +56,11 @@
 		NSDictionary *eventDictonary = (NSDictionary *)elem;
 		MAEventData *newEvent = [[MAEventData alloc] initWithDictionary:eventDictonary];
 		[self.eventList addObject:newEvent];
+	}
+	if (self.eventTableViewController) {
+		[self.eventTableViewController reloadTableData:self.eventList];
+	} else {
+		NSLog(@"No assigned eventTableViewController");
 	}
 }
 

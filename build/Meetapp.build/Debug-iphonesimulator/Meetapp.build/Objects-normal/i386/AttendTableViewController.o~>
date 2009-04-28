@@ -1,0 +1,27 @@
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:9:39: error: MAEventTableViewController.h: No such file or directory
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:17: warning: cannot find interface declaration for 'MAEventTableViewController'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:17: error: no declaration of property 'dataManager' found in the interface
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:17: error: no declaration of property 'eventsArray' found in the interface
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:19: error: syntax error before 'MADataManager'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m: In function '-[MAEventTableViewController viewDidLoad]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:47: error: no super class declared in @interface for 'MAEventTableViewController'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:48: error: 'attendEventsArray' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:48: error: (Each undeclared identifier is reported only once
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:48: error: for each function it appears in.)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:48: error: 'dataManager' undeclared (first use in this function)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:49: error: request for member 'tableView' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m: In function '-[MAEventTableViewController didReceiveMemoryWarning]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:102: error: no super class declared in @interface for 'MAEventTableViewController'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m: In function '-[MAEventTableViewController tableView:numberOfRowsInSection:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:115: error: request for member 'attendEventsArray' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:116: warning: control reaches end of non-void function
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m: In function '-[MAEventTableViewController tableView:cellForRowAtIndexPath:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:132: error: request for member 'attendEventsArray' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m: In function '-[MAEventTableViewController tableView:didSelectRowAtIndexPath:]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:140: error: request for member 'attendEventsArray' in something not a structure or union
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:143: warning: 'MAEventTableViewController' may not respond to '-navigationController'
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:143: warning: (Messages without a matching method signature
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:143: warning: will be assumed to return 'id' and accept
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:143: warning: '...' as arguments.)
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m: In function '-[MAEventTableViewController dealloc]':
+/Users/palimpsest/Documents/School/NYU/Projects/meetapp/Meetapp/Classes/AttendTableViewController.m:192: error: no super class declared in @interface for 'MAEventTableViewController'
