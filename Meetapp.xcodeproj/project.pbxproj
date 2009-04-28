@@ -22,6 +22,7 @@
 		2D9913E10FA65698009DA6AC /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9913E00FA65698009DA6AC /* EventTableViewCell.m */; };
 		2D99152C0FA66B20009DA6AC /* MAToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D99152B0FA66B20009DA6AC /* MAToolbarController.m */; };
 		2DC9D9800FA6B47C005EF46D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9D97F0FA6B47C005EF46D /* Settings.bundle */; };
+		2DC9DA150FA6CBE0005EF46D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9DA140FA6CBE0005EF46D /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		2D99152A0FA66B20009DA6AC /* MAToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAToolbarController.h; sourceTree = "<group>"; };
 		2D99152B0FA66B20009DA6AC /* MAToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAToolbarController.m; sourceTree = "<group>"; };
 		2DC9D97F0FA6B47C005EF46D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2DC9DA140FA6CBE0005EF46D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				2DC9DA140FA6CBE0005EF46D /* Icon.png */,
 				2DC9D97F0FA6B47C005EF46D /* Settings.bundle */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -201,6 +204,7 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				2DC9D9800FA6B47C005EF46D /* Settings.bundle in Resources */,
+				2DC9DA150FA6CBE0005EF46D /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
