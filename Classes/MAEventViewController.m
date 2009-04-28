@@ -7,6 +7,7 @@
 //
 
 #import "MAEventViewController.h"
+#import "CellTextView.h"
 
 @interface MAEventViewController ()
 
@@ -64,16 +65,47 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
-	if (cell == nil) {
-		// Create a new cell. CGRectZero allows the cell to determine the appropriate size.
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyIdentifier"] autorelease];
-	}
+
 	switch (indexPath.section) {
-		case 0: cell.text = eventData.groupName; break;
-		case 1: cell.text = eventData.eventName; break;
-		case 2: cell.text = [dateFormatter stringFromDate:eventData.time]; break;
-		case 3: cell.text = eventData.venueName; break;
-		case 4: cell.text = eventData.description; break;
+		case 0: 
+			if (cell == nil) {
+				cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyIdentifier"] autorelease];
+			}
+			cell.font = [UIFont boldSystemFontOfSize:12];
+			cell.text = eventData.groupName; 
+			break;
+		case 1:
+			if (cell == nil) {
+				cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyIdentifier"] autorelease];
+			}
+			cell.font = [UIFont boldSystemFontOfSize:12];
+			cell.text = eventData.eventName;
+			break;
+		case 2:
+			if (cell == nil) {
+				cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyIdentifier"] autorelease];
+			}
+			cell.font = [UIFont systemFontOfSize:12];
+			cell.text = [dateFormatter stringFromDate:eventData.time]; 
+			break;
+		case 3: 
+			if (cell == nil) {
+				cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyIdentifier"] autorelease];
+			}
+			cell.font = [UIFont systemFontOfSize:12];
+			cell.text = eventData.venueName; 
+			break;
+		case 4: 
+			if (cell == nil) {
+				cell = [[[CellTextView alloc] initWithFrame:CGRectZero	reuseIdentifier:kCellTextView_ID] autorelease];
+			}
+			UITextView* tempTextView = [[UITextView alloc] initWithFrame:CGRectMake(0,0,300,300)];
+			
+			tempTextView.font = [UIFont systemFontOfSize:12];
+			tempTextView.text = eventData.description;
+			[((CellTextView*)cell) setView:tempTextView];
+			[tempTextView release];
+			break;
 	}
 	return cell;
 }

@@ -94,7 +94,7 @@
 - (void)dealloc {
 	[nameLabel release];
 	[dateLabel release];
-    [super dealloc];
+	[super dealloc];
 }
 
 
