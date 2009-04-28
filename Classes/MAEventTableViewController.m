@@ -182,7 +182,7 @@
 		eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
 	}
 	
-	MAEventViewController *eventViewController = [[MAEventViewController alloc] initWithEvent:eventAtIndex];
+	MAEventViewController *eventViewController = [[MAEventViewController alloc]  initWithNibNameAndEventData:@"MAEventView" bundle:nil event:eventAtIndex];
 	
 	[[self navigationController] pushViewController:eventViewController animated:YES];
 	

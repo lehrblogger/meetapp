@@ -9,17 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "MAEventData.h"
 
-
-@interface MAEventViewController : UIViewController {
-	UITextView *testText;
+@interface MAEventViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
 	MAEventData *eventData;
+	IBOutlet UITableView *tableView;
+	NSDateFormatter *dateFormatter;
+	NSIndexPath *selectedIndexPath;
 }
 
-- (id) initWithEvent:(MAEventData*)aEventData;
-
-@property (nonatomic, retain)	UITextView *testText;
 @property (nonatomic, retain) MAEventData *eventData;
 
-
+- (id)initWithNibNameAndEventData:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil event:(MAEventData*)aEventData;
 
 @end

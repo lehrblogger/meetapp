@@ -22,7 +22,7 @@
 			nameLabel = [self newLabelForMainText:YES f:newFrame];
 			[self addSubview:nameLabel];
 			
-			newFrame = CGRectMake(10, 20, self.contentView.bounds.size.width - 14, self.contentView.bounds.size.height - 24);
+			newFrame = CGRectMake(4, 20, self.contentView.bounds.size.width - 8, self.contentView.bounds.size.height - 24);
 			dateLabel = [self newLabelForMainText:NO f:newFrame];
 			[self addSubview:dateLabel];
 		}
@@ -70,7 +70,7 @@
 	[dateFormatter setDateStyle:NSDateFormatterNoStyle];
 	[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
 	NSString *formattedTimeString = [dateFormatter stringFromDate:dateObj];
-	dateLabel.text = [NSString stringWithFormat:@"on %@ at %@", formattedTimeString, formattedDateString];
+	dateLabel.text = [NSString stringWithFormat:@"on %@ at %@", formattedDateString, formattedTimeString];
 	
 	//[dateLabel sizeToFit];
 	

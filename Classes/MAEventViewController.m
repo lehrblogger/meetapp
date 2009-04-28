@@ -8,80 +8,96 @@
 
 #import "MAEventViewController.h"
 
+@interface MAEventViewController ()
+
+@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+@property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, retain) NSIndexPath *selectedIndexPath;
+
+@end
+
 
 @implementation MAEventViewController
 
-@synthesize testText;
-@synthesize eventData;
+@synthesize eventData, dateFormatter, tableView, selectedIndexPath;
 
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-- (id) initWithEvent:(MAEventData*)aEventData {
-	self = [super init];
-	if (self)
-	{
+- (id)initWithNibNameAndEventData:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil event:(MAEventData*)aEventData {
+	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+		// Title displayed by the navigation controller.
+		self.title = @"Event Info";
 		self.eventData = aEventData;
-		self.title = NSLocalizedString(eventData.eventName, @"");
+
+		// Create a date formatter to convert the date to a string format.
+		dateFormatter = [[NSDateFormatter alloc] init];
+		[dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+		[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
 	}
 	return self;
 }
 
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-	NSLog(@"Loading view");
-	UIView *contentView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-	contentView.backgroundColor = [UIColor blackColor];
-	contentView.autoresizesSubviews = YES;
-	
-	// Levi: Create the dimensions and centered position for our label
-	// screen width / 2 - label width / 2
-	CGFloat x = 0;
-	// screen height / 2 - label height / 2
-	CGFloat y = 0;
-	CGRect rect = CGRectMake(x , y, 320.0f, 480.0f);
-
-	self.testText = [[[UITextView alloc] initWithFrame:rect] autorelease];
-	[testText setText:eventData.description];
-	[testText setTextAlignment:UITextAlignmentLeft];
-	
-	[contentView addSubview:testText];
-	self.view = contentView;
-	[contentView release];
-}
-
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
-    // Release anything that's not essential, such as cached data
-}
-
-
 - (void)dealloc {
-	[testText release];
+	[selectedIndexPath release];
+	[tableView release];
+	[eventData release];
+	[dateFormatter release];
 	[super dealloc];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	// Remove any existing selection.
+	[tableView deselectRowAtIndexPath:selectedIndexPath animated:NO];
+	// Redisplay the data.
+	[tableView reloadData];
+}
+
+#pragma mark -
+#pragma mark <UITableViewDelegate, UITableViewDataSource> Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tv {
+	return 5;
+}
+
+- (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section {
+	// Only one row for each section
+	return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+	if (cell == nil) {
+		// Create a new cell. CGRectZero allows the cell to determine the appropriate size.
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyIdentifier"] autorelease];
+	}
+	switch (indexPath.section) {
+		case 0: cell.text = eventData.groupName; break;
+		case 1: cell.text = eventData.eventName; break;
+		case 2: cell.text = [dateFormatter stringFromDate:eventData.time]; break;
+		case 3: cell.text = eventData.venueName; break;
+		case 4: cell.text = eventData.description; break;
+	}
+	return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tv titleForHeaderInSection:(NSInteger)section {
+	// Return the displayed title for the specified section.
+	switch (section) {
+		case 0: return @"Group Name";
+		case 1: return @"Event Name";
+		case 2: return @"Date and Time";
+		case 3: return @"Venue Name";
+		case 4: return @"Event Description";
+	}
+	return nil;
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tv willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	// Only allow selection if editing.
+	return (self.editing) ? indexPath : nil;
+}
+
+- (UITableViewCellAccessoryType)tableView:(UITableView *)tv accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath {
+	// Show the disclosure indicator if editing.
+	return (self.editing) ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
+}
 
 @end
