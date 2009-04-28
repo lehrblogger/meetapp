@@ -541,6 +541,27 @@
 			2DDE68360FA725DA002F360B /* PBXTextBookmark */ = 2DDE68360FA725DA002F360B /* PBXTextBookmark */;
 			2DDE68370FA725DA002F360B /* PBXTextBookmark */ = 2DDE68370FA725DA002F360B /* PBXTextBookmark */;
 			2DDE68380FA725DA002F360B /* PBXTextBookmark */ = 2DDE68380FA725DA002F360B /* PBXTextBookmark */;
+			2DDE683B0FA729EC002F360B /* PBXTextBookmark */ = 2DDE683B0FA729EC002F360B /* PBXTextBookmark */;
+			2DDE683C0FA729EC002F360B /* PBXTextBookmark */ = 2DDE683C0FA729EC002F360B /* PBXTextBookmark */;
+			2DDE683D0FA729EC002F360B /* PBXTextBookmark */ = 2DDE683D0FA729EC002F360B /* PBXTextBookmark */;
+			2DDE683E0FA729EC002F360B /* PBXTextBookmark */ = 2DDE683E0FA729EC002F360B /* PBXTextBookmark */;
+			2DDE683F0FA729EC002F360B /* PBXTextBookmark */ = 2DDE683F0FA729EC002F360B /* PBXTextBookmark */;
+			2DDE68400FA729EC002F360B /* PBXTextBookmark */ = 2DDE68400FA729EC002F360B /* PBXTextBookmark */;
+			2DDE68410FA729EC002F360B /* PBXTextBookmark */ = 2DDE68410FA729EC002F360B /* PBXTextBookmark */;
+			2DDE68430FA72A0A002F360B /* PBXTextBookmark */ = 2DDE68430FA72A0A002F360B /* PBXTextBookmark */;
+			2DDE68440FA72A0A002F360B /* PBXTextBookmark */ = 2DDE68440FA72A0A002F360B /* PBXTextBookmark */;
+			2DDE68450FA72A0A002F360B /* PBXTextBookmark */ = 2DDE68450FA72A0A002F360B /* PBXTextBookmark */;
+			2DDE68460FA72A0A002F360B /* PBXTextBookmark */ = 2DDE68460FA72A0A002F360B /* PBXTextBookmark */;
+			2DDE68470FA72A0A002F360B /* PBXTextBookmark */ = 2DDE68470FA72A0A002F360B /* PBXTextBookmark */;
+			2DDE68480FA72A0A002F360B /* PBXTextBookmark */ = 2DDE68480FA72A0A002F360B /* PBXTextBookmark */;
+			2DDE68490FA72A0A002F360B /* PBXTextBookmark */ = 2DDE68490FA72A0A002F360B /* PBXTextBookmark */;
+			2DDE684B0FA72A24002F360B /* PBXTextBookmark */ = 2DDE684B0FA72A24002F360B /* PBXTextBookmark */;
+			2DDE684C0FA72A24002F360B /* PBXTextBookmark */ = 2DDE684C0FA72A24002F360B /* PBXTextBookmark */;
+			2DDE684D0FA72A24002F360B /* PBXTextBookmark */ = 2DDE684D0FA72A24002F360B /* PBXTextBookmark */;
+			2DDE684E0FA72A24002F360B /* PBXTextBookmark */ = 2DDE684E0FA72A24002F360B /* PBXTextBookmark */;
+			2DDE684F0FA72A24002F360B /* PBXTextBookmark */ = 2DDE684F0FA72A24002F360B /* PBXTextBookmark */;
+			2DDE68500FA72A24002F360B /* PBXTextBookmark */ = 2DDE68500FA72A24002F360B /* PBXTextBookmark */;
+			2DDE68510FA72A24002F360B /* PBXTextBookmark */ = 2DDE68510FA72A24002F360B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2D9913B40FA655D8009DA6AC /* Source Control */;
 		userBuildSettings = {
@@ -686,8 +707,8 @@
 	2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1092, 1428}}";
-			sepNavSelRange = "{901, 0}";
-			sepNavVisRange = "{462, 2309}";
+			sepNavSelRange = "{496, 0}";
+			sepNavVisRange = "{256, 2503}";
 			sepNavWindowFrame = "{{15, 609}, {1105, 964}}";
 		};
 	};
@@ -1337,7 +1358,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -1357,7 +1378,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -1377,7 +1398,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -1447,7 +1468,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -1477,7 +1498,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -1545,7 +1566,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -1655,7 +1676,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -1753,7 +1774,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 1401;
 		vrLoc = 0;
@@ -1862,7 +1883,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 29";
 		rLen = 0;
-		rLoc = 1671;
+		rLoc = 1668;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 0;
@@ -1982,7 +2003,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 48";
 		rLen = 0;
-		rLoc = 2298;
+		rLoc = 2295;
 		rType = 0;
 		vrLen = 1817;
 		vrLoc = 0;
@@ -2052,7 +2073,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 48";
 		rLen = 0;
-		rLoc = 2298;
+		rLoc = 2295;
 		rType = 0;
 		vrLen = 1817;
 		vrLoc = 0;
@@ -2072,7 +2093,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 34";
 		rLen = 0;
-		rLoc = 1736;
+		rLoc = 1733;
 		rType = 0;
 		vrLen = 1839;
 		vrLoc = 0;
@@ -2092,7 +2113,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 37";
 		rLen = 0;
-		rLoc = 883;
+		rLoc = 880;
 		rType = 0;
 		vrLen = 2178;
 		vrLoc = 0;
@@ -2172,7 +2193,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 42";
 		rLen = 0;
-		rLoc = 1736;
+		rLoc = 1733;
 		rType = 0;
 		vrLen = 2172;
 		vrLoc = 0;
@@ -2252,7 +2273,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 42";
 		rLen = 0;
-		rLoc = 1736;
+		rLoc = 1733;
 		rType = 0;
 		vrLen = 2172;
 		vrLoc = 0;
@@ -2282,7 +2303,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 67";
 		rLen = 0;
-		rLoc = 2256;
+		rLoc = 2253;
 		rType = 0;
 		vrLen = 2196;
 		vrLoc = 149;
@@ -2332,7 +2353,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 28";
 		rLen = 45;
-		rLoc = 905;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 2039;
 		vrLoc = 149;
@@ -2362,7 +2383,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 28";
 		rLen = 45;
-		rLoc = 905;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 2274;
 		vrLoc = 90;
@@ -2382,7 +2403,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 28";
 		rLen = 45;
-		rLoc = 905;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 2233;
 		vrLoc = 90;
@@ -2402,7 +2423,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 846;
+		rLoc = 843;
 		rType = 0;
 		vrLen = 2260;
 		vrLoc = 90;
@@ -2472,7 +2493,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 846;
+		rLoc = 843;
 		rType = 0;
 		vrLen = 2325;
 		vrLoc = 90;
@@ -2542,7 +2563,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 32";
 		rLen = 0;
-		rLoc = 852;
+		rLoc = 849;
 		rType = 0;
 		vrLen = 2534;
 		vrLoc = 90;
@@ -2612,7 +2633,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 76";
 		rLen = 0;
-		rLoc = 2252;
+		rLoc = 2249;
 		rType = 0;
 		vrLen = 2601;
 		vrLoc = 90;
@@ -2692,7 +2713,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 76";
 		rLen = 0;
-		rLoc = 2252;
+		rLoc = 2249;
 		rType = 0;
 		vrLen = 2425;
 		vrLoc = 149;
@@ -2702,7 +2723,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 76";
 		rLen = 0;
-		rLoc = 2252;
+		rLoc = 2249;
 		rType = 0;
 		vrLen = 2474;
 		vrLoc = 149;
@@ -2722,7 +2743,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 78";
 		rLen = 0;
-		rLoc = 2356;
+		rLoc = 2353;
 		rType = 0;
 		vrLen = 2423;
 		vrLoc = 149;
@@ -2792,7 +2813,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 55";
 		rLen = 0;
-		rLoc = 1736;
+		rLoc = 1733;
 		rType = 0;
 		vrLen = 2201;
 		vrLoc = 149;
@@ -2862,7 +2883,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 42";
 		rLen = 0;
-		rLoc = 1361;
+		rLoc = 1358;
 		rType = 0;
 		vrLen = 2275;
 		vrLoc = 90;
@@ -2882,7 +2903,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 42";
 		rLen = 0;
-		rLoc = 1361;
+		rLoc = 1358;
 		rType = 0;
 		vrLen = 2275;
 		vrLoc = 90;
@@ -3022,7 +3043,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 42";
 		rLen = 0;
-		rLoc = 1361;
+		rLoc = 1358;
 		rType = 0;
 		vrLen = 2253;
 		vrLoc = 90;
@@ -3092,7 +3113,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 69";
 		rLen = 0;
-		rLoc = 2360;
+		rLoc = 2357;
 		rType = 0;
 		vrLen = 2255;
 		vrLoc = 90;
@@ -3162,7 +3183,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 45";
 		rLen = 0;
-		rLoc = 1483;
+		rLoc = 1480;
 		rType = 0;
 		vrLen = 2256;
 		vrLoc = 90;
@@ -3262,7 +3283,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 20";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 2466;
 		vrLoc = 90;
@@ -3272,7 +3293,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 45";
 		rLen = 0;
-		rLoc = 1483;
+		rLoc = 1480;
 		rType = 0;
 		vrLen = 2256;
 		vrLoc = 90;
@@ -3292,7 +3313,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 20";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 2468;
 		vrLoc = 149;
@@ -3312,7 +3333,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 20";
 		rLen = 0;
-		rLoc = 584;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 2407;
 		vrLoc = 149;
@@ -3352,7 +3373,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 61";
 		rLen = 0;
-		rLoc = 1736;
+		rLoc = 1733;
 		rType = 0;
 		vrLen = 2419;
 		vrLoc = 415;
@@ -3440,7 +3461,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 60";
 		rLen = 0;
-		rLoc = 1736;
+		rLoc = 1733;
 		rType = 0;
 		vrLen = 2523;
 		vrLoc = 45;
@@ -3460,7 +3481,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 101";
 		rLen = 0;
-		rLoc = 2702;
+		rLoc = 2699;
 		rType = 0;
 		vrLen = 2573;
 		vrLoc = 152;
@@ -3530,7 +3551,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 49";
 		rLen = 0;
-		rLoc = 1483;
+		rLoc = 1480;
 		rType = 0;
 		vrLen = 2585;
 		vrLoc = 257;
@@ -3630,7 +3651,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 32";
 		rLen = 0;
-		rLoc = 960;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 2205;
 		vrLoc = 0;
@@ -3640,7 +3661,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 32";
 		rLen = 61;
-		rLoc = 905;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 2462;
 		vrLoc = 3;
@@ -3670,7 +3691,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 21";
 		rLen = 58;
-		rLoc = 581;
+		rLoc = 580;
 		rType = 0;
 		vrLen = 2173;
 		vrLoc = 3;
@@ -3710,7 +3731,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 32";
 		rLen = 0;
-		rLoc = 960;
+		rLoc = 957;
 		rType = 0;
 		vrLen = 2175;
 		vrLoc = 0;
@@ -3750,7 +3771,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 668;
+		rLoc = 667;
 		rType = 0;
 		vrLen = 2199;
 		vrLoc = 0;
@@ -3820,7 +3841,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 26";
 		rLen = 0;
-		rLoc = 846;
+		rLoc = 843;
 		rType = 0;
 		vrLen = 2408;
 		vrLoc = 45;
@@ -3890,7 +3911,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 71";
 		rLen = 0;
-		rLoc = 2252;
+		rLoc = 2249;
 		rType = 0;
 		vrLen = 2458;
 		vrLoc = 45;
@@ -3960,7 +3981,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 48";
 		rLen = 0;
-		rLoc = 1361;
+		rLoc = 1358;
 		rType = 0;
 		vrLen = 2463;
 		vrLoc = 45;
@@ -4030,7 +4051,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 23";
 		rLen = 0;
-		rLoc = 647;
+		rLoc = 646;
 		rType = 0;
 		vrLen = 2494;
 		vrLoc = 3;
@@ -4100,7 +4121,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 65";
 		rLen = 0;
-		rLoc = 1877;
+		rLoc = 1874;
 		rType = 0;
 		vrLen = 2524;
 		vrLoc = 42;
@@ -4170,7 +4191,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 51";
 		rLen = 0;
-		rLoc = 1483;
+		rLoc = 1480;
 		rType = 0;
 		vrLen = 2380;
 		vrLoc = 153;
@@ -4240,7 +4261,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 22";
 		rLen = 0;
-		rLoc = 625;
+		rLoc = 624;
 		rType = 0;
 		vrLen = 2376;
 		vrLoc = 153;
@@ -4310,7 +4331,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 25";
 		rLen = 0;
-		rLoc = 789;
+		rLoc = 786;
 		rType = 0;
 		vrLen = 2403;
 		vrLoc = 217;
@@ -4380,7 +4401,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 25";
 		rLen = 0;
-		rLoc = 789;
+		rLoc = 786;
 		rType = 0;
 		vrLen = 2405;
 		vrLoc = 217;
@@ -4450,7 +4471,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 27";
 		rLen = 0;
-		rLoc = 880;
+		rLoc = 877;
 		rType = 0;
 		vrLen = 2443;
 		vrLoc = 256;
@@ -4520,7 +4541,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 51";
 		rLen = 0;
-		rLoc = 1547;
+		rLoc = 1544;
 		rType = 0;
 		vrLen = 2497;
 		vrLoc = 256;
@@ -4590,7 +4611,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 51";
 		rLen = 0;
-		rLoc = 1577;
+		rLoc = 1574;
 		rType = 0;
 		vrLen = 2459;
 		vrLoc = 256;
@@ -4660,7 +4681,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 75";
 		rLen = 0;
-		rLoc = 2360;
+		rLoc = 2357;
 		rType = 0;
 		vrLen = 2506;
 		vrLoc = 256;
@@ -4730,7 +4751,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 75";
 		rLen = 0;
-		rLoc = 2360;
+		rLoc = 2357;
 		rType = 0;
 		vrLen = 2506;
 		vrLoc = 256;
@@ -4740,7 +4761,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 75";
 		rLen = 0;
-		rLoc = 2360;
+		rLoc = 2357;
 		rType = 0;
 		vrLen = 826;
 		vrLoc = 1936;
@@ -4750,7 +4771,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 29";
 		rLen = 0;
-		rLoc = 901;
+		rLoc = 898;
 		rType = 0;
 		vrLen = 2329;
 		vrLoc = 442;
@@ -4820,7 +4841,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 29";
 		rLen = 0;
-		rLoc = 901;
+		rLoc = 898;
 		rType = 0;
 		vrLen = 2329;
 		vrLoc = 442;
@@ -4830,7 +4851,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 29";
 		rLen = 0;
-		rLoc = 901;
+		rLoc = 898;
 		rType = 0;
 		vrLen = 939;
 		vrLoc = 1736;
@@ -4840,7 +4861,7 @@
 		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
 		name = "MAEventTableViewCell.m: 29";
 		rLen = 0;
-		rLoc = 901;
+		rLoc = 898;
 		rType = 0;
 		vrLen = 2309;
 		vrLoc = 462;
@@ -4896,6 +4917,216 @@
 		vrLoc = 492;
 	};
 	2DDE68380FA725DA002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C30FA655E7009DA6AC /* MAEventData.m */;
+		name = "MAEventData.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1651;
+		vrLoc = 173;
+	};
+	2DDE683B0FA729EC002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
+		name = "MAEventTableViewCell.m: 25";
+		rLen = 0;
+		rLoc = 744;
+		rType = 0;
+		vrLen = 2494;
+		vrLoc = 256;
+	};
+	2DDE683C0FA729EC002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C20FA655E7009DA6AC /* MAEventData.h */;
+		name = "MAEventData.h: 90";
+		rLen = 11;
+		rLoc = 2752;
+		rType = 0;
+		vrLen = 1890;
+		vrLoc = 887;
+	};
+	2DDE683D0FA729EC002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2DC9DCA40FA6EF58005EF46D /* MADataManager.m */;
+		name = "MADataManager.m: 73";
+		rLen = 15;
+		rLoc = 2076;
+		rType = 0;
+		vrLen = 2381;
+		vrLoc = 2043;
+	};
+	2DDE683E0FA729EC002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */;
+		name = "MAEventTableViewController.m: 73";
+		rLen = 0;
+		rLoc = 2135;
+		rType = 0;
+		vrLen = 1984;
+		vrLoc = 958;
+	};
+	2DDE683F0FA729EC002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C40FA655E7009DA6AC /* MAGroupData.h */;
+		name = "MAGroupData.h: 52";
+		rLen = 0;
+		rLoc = 1425;
+		rType = 0;
+		vrLen = 1255;
+		vrLoc = 174;
+	};
+	2DDE68400FA729EC002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C50FA655E7009DA6AC /* MAGroupData.m */;
+		name = "MAGroupData.m: 47";
+		rLen = 22;
+		rLoc = 1817;
+		rType = 0;
+		vrLen = 1964;
+		vrLoc = 492;
+	};
+	2DDE68410FA729EC002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C30FA655E7009DA6AC /* MAEventData.m */;
+		name = "MAEventData.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1651;
+		vrLoc = 173;
+	};
+	2DDE68430FA72A0A002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
+		name = "MAEventTableViewCell.m: 21";
+		rLen = 0;
+		rLoc = 496;
+		rType = 0;
+		vrLen = 2502;
+		vrLoc = 256;
+	};
+	2DDE68440FA72A0A002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C20FA655E7009DA6AC /* MAEventData.h */;
+		name = "MAEventData.h: 90";
+		rLen = 11;
+		rLoc = 2752;
+		rType = 0;
+		vrLen = 1890;
+		vrLoc = 887;
+	};
+	2DDE68450FA72A0A002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2DC9DCA40FA6EF58005EF46D /* MADataManager.m */;
+		name = "MADataManager.m: 73";
+		rLen = 15;
+		rLoc = 2076;
+		rType = 0;
+		vrLen = 2381;
+		vrLoc = 2043;
+	};
+	2DDE68460FA72A0A002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */;
+		name = "MAEventTableViewController.m: 73";
+		rLen = 0;
+		rLoc = 2135;
+		rType = 0;
+		vrLen = 1984;
+		vrLoc = 958;
+	};
+	2DDE68470FA72A0A002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C40FA655E7009DA6AC /* MAGroupData.h */;
+		name = "MAGroupData.h: 52";
+		rLen = 0;
+		rLoc = 1425;
+		rType = 0;
+		vrLen = 1255;
+		vrLoc = 174;
+	};
+	2DDE68480FA72A0A002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C50FA655E7009DA6AC /* MAGroupData.m */;
+		name = "MAGroupData.m: 47";
+		rLen = 22;
+		rLoc = 1817;
+		rType = 0;
+		vrLen = 1964;
+		vrLoc = 492;
+	};
+	2DDE68490FA72A0A002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C30FA655E7009DA6AC /* MAEventData.m */;
+		name = "MAEventData.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1651;
+		vrLoc = 173;
+	};
+	2DDE684B0FA72A24002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913E00FA65698009DA6AC /* MAEventTableViewCell.m */;
+		name = "MAEventTableViewCell.m: 21";
+		rLen = 0;
+		rLoc = 496;
+		rType = 0;
+		vrLen = 2503;
+		vrLoc = 256;
+	};
+	2DDE684C0FA72A24002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C20FA655E7009DA6AC /* MAEventData.h */;
+		name = "MAEventData.h: 90";
+		rLen = 11;
+		rLoc = 2752;
+		rType = 0;
+		vrLen = 1890;
+		vrLoc = 887;
+	};
+	2DDE684D0FA72A24002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2DC9DCA40FA6EF58005EF46D /* MADataManager.m */;
+		name = "MADataManager.m: 73";
+		rLen = 15;
+		rLoc = 2076;
+		rType = 0;
+		vrLen = 2381;
+		vrLoc = 2043;
+	};
+	2DDE684E0FA72A24002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913D00FA655F0009DA6AC /* MAEventTableViewController.m */;
+		name = "MAEventTableViewController.m: 73";
+		rLen = 0;
+		rLoc = 2135;
+		rType = 0;
+		vrLen = 1984;
+		vrLoc = 958;
+	};
+	2DDE684F0FA72A24002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C40FA655E7009DA6AC /* MAGroupData.h */;
+		name = "MAGroupData.h: 52";
+		rLen = 0;
+		rLoc = 1425;
+		rType = 0;
+		vrLen = 1255;
+		vrLoc = 174;
+	};
+	2DDE68500FA72A24002F360B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2D9913C50FA655E7009DA6AC /* MAGroupData.m */;
+		name = "MAGroupData.m: 47";
+		rLen = 22;
+		rLoc = 1817;
+		rType = 0;
+		vrLen = 1964;
+		vrLoc = 492;
+	};
+	2DDE68510FA72A24002F360B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2D9913C30FA655E7009DA6AC /* MAEventData.m */;
 		name = "MAEventData.m: 1";

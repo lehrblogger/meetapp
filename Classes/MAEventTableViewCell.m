@@ -18,11 +18,11 @@
 			
 			CGRect newFrame;
 			
-			newFrame = CGRectMake(4, 4, self.contentView.bounds.size.width - 100, self.contentView.bounds.size.height - 4);
+			newFrame = CGRectMake(4, -8, self.contentView.bounds.size.width - 8, self.contentView.bounds.size.height - 4);
 			nameLabel = [self newLabelForMainText:YES f:newFrame];
 			[self addSubview:nameLabel];
 			
-			newFrame = CGRectMake(4, 24, self.contentView.bounds.size.width - 100, self.contentView.bounds.size.height - 24);
+			newFrame = CGRectMake(10, 20, self.contentView.bounds.size.width - 14, self.contentView.bounds.size.height - 24);
 			dateLabel = [self newLabelForMainText:NO f:newFrame];
 			[self addSubview:dateLabel];
 		}
