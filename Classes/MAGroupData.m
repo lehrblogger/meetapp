@@ -15,14 +15,15 @@
 
 - (id) initWithDictionary:(NSDictionary *)aGroupData {
 	self = [super init];
-  if (self != nil) 
-  {
+  if (self != nil)  {
+		NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+		
 		self.groupId = [[aGroupData objectForKey:@"id"] integerValue];
 		self.groupName = [aGroupData objectForKey:@"name"];
 		self.groupURL = [NSURL URLWithString:[aGroupData objectForKey:@"link"]];
-		self.updated = [NSDate dateWithString:[aGroupData objectForKey:@"updated"]];
+		self.updated = [dateFormat dateFromString:[aGroupData objectForKey:@"updated"]];
 		self.numMembers = [[aGroupData objectForKey:@"members"] integerValue];
-		self.created = [NSDate dateWithString:[aGroupData objectForKey:@"created"]];
+		self.created = [dateFormat dateFromString:[aGroupData objectForKey:@"created"]];
 		self.photoURL = [NSURL URLWithString:[aGroupData objectForKey:@"photo_url"]];
 		self.description = [aGroupData objectForKey:@"description"];
 		self.lat = [NSNumber numberWithFloat: [[aGroupData objectForKey:@"lat"] floatValue]];
@@ -33,6 +34,8 @@
 		self.zip = [[aGroupData objectForKey:@"zip"] integerValue];
 		self.organizerprofileURL = [NSURL URLWithString:[aGroupData objectForKey:@"organizerProfileURL"]];
 		self.daysLeft = [[aGroupData objectForKey:@"daysleft"] integerValue];
+		
+		[dateFormat release];
 	}
   return self;
 }

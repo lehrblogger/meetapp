@@ -61,14 +61,15 @@
 */
 - (id) initWithDictionary:(NSDictionary *)aEventData group:(MAGroupData *)aGroup {
 	self = [super init];
-  if (self != nil) 
-  {
+  if (self != nil)  {	
+		NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+		
 		self.groupName = [aEventData objectForKey:@"group_name"];
 		self.eventName = [aEventData objectForKey:@"name"];
 		self.description = [aEventData objectForKey:@"description"];
 		self.eventId = [[aEventData objectForKey:@"id"] integerValue];
-		self.time = [NSDate dateWithString:[aEventData objectForKey:@"time"]];
-		self.updated = [NSDate dateWithString:[aEventData objectForKey:@"updated"]];
+		self.time = [dateFormat dateFromString:[aEventData objectForKey:@"time"]];
+		self.updated = [dateFormat dateFromString:[aEventData objectForKey:@"updated"]];
 		self.eventURL = [NSURL URLWithString:[aEventData objectForKey:@"event_url"]];
 		self.photoURL = [NSURL URLWithString:[aEventData objectForKey:@"photo_url"]];
 		self.fee = [NSNumber numberWithFloat: [[aEventData objectForKey:@"fee"] floatValue]];
@@ -85,6 +86,8 @@
 		self.lon = [NSNumber numberWithFloat: [[aEventData objectForKey:@"lon"] floatValue]];
 		
 		self.group = aGroup;
+		
+		[dateFormat release];
 	}
   return self;
 }

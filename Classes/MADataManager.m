@@ -100,7 +100,17 @@
 
 - (NSString*) getLastUpdatedString {
 	if (self.lastUpdated) {
-		return [NSString stringWithFormat:@"last updated on %@", self.lastUpdated.description];
+		NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init]  autorelease];
+		
+		[dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+		[dateFormatter setTimeStyle:NSDateFormatterNoStyle];		
+		NSString *formattedDateString = [dateFormatter stringFromDate:self.lastUpdated];
+		
+		[dateFormatter setDateStyle:NSDateFormatterNoStyle];
+		[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+		NSString *formattedTimeString = [dateFormatter stringFromDate:self.lastUpdated];
+				
+		return [NSString stringWithFormat:@"last update at %@ on %@", formattedTimeString, formattedDateString];// descriptionWithCalendarFormat:@"%H:%M on %m/%d/%Y" timeZone:[NSTimeZone systemTimeZone] locale:[NSLocale systemLocale]]];
 	} else {
 		return @"no previous updates";	
 	}

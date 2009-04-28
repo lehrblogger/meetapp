@@ -168,7 +168,7 @@
 	} else {
 		eventAtIndex = (MAEventData*)[self.attendEventsArray objectAtIndex:[indexPath row]];
 	}
-	[cell setData:eventAtIndex.eventName];
+	[cell setData:eventAtIndex.eventName date:eventAtIndex.time];
 	//TODO release MAEventData
     return cell;
 }

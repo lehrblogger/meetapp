@@ -1,0 +1,3 @@
+First, log in to Meetup.com as usual. Click the link near the upper right that says "Profile" and look a the URL in your browser's location bar. Enter the number near the end of the URL in the "Member ID" field above.
+
+Then, click the link that says 'Developers' in the lower left corner of the screen, and then click "Get an API key" from the left menu. Enter the bold letters and numbers in the "API Key" field above.

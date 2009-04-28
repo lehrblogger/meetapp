@@ -10,10 +10,11 @@
 
 
 @interface MAEventTableViewCell : UITableViewCell {
-	UILabel *name;
+	UILabel *nameLabel;
+	UILabel *dateLabel;
 }
 
-- (void) setData:(NSString*)nameString;
-
+- (void) setData:(NSString*)nameString date:(NSDate*)dateObj;
+- (UILabel *)newLabelForMainText:(BOOL)isMain f:(CGRect)frame;
 
 @end
